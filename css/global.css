@@ -749,7 +749,11 @@
         font-size: 15px;
         min-width: 200px;
     }
-    
+
+    .multiple {
+        background: none;
+    }
+
     .select-highlighted {
         background: #3679b9 url(../img/select-arrow-white.png) no-repeat right 20px center / 10px;
     }
@@ -758,7 +762,7 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        height: 38px;
+        min-height: 38px;
         width: 100%;
         border: none;
         margin: 0;
