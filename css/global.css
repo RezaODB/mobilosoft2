@@ -1212,6 +1212,11 @@
         background: url(../img/nav-location.png) no-repeat center center;
     }
     
+    nav ul li.nav-library {
+        background: url(../img/nav-library.png) no-repeat center center;
+    }
+    
+
     nav ul li.nav-post {
         background: url(../img/nav-post.png) no-repeat center center;
     }
