@@ -274,7 +274,7 @@
         background-color: #8fbd55;
         color: #fff;
     }
-
+    
     .noHover {
         pointer-events: none;
     }
@@ -489,7 +489,8 @@
         display: block;
         width: 100%;
         height: 1px;
-        clear: both
+        clear: both;
+        font-size: 0;
     }
     
     .boxlined.success {
@@ -749,11 +750,11 @@
         font-size: 15px;
         min-width: 200px;
     }
-
+    
     .multiple {
         background: none;
     }
-
+    
     .select-highlighted {
         background: #3679b9 url(../img/select-arrow-white.png) no-repeat right 20px center / 10px;
     }
@@ -1107,7 +1108,7 @@
     .articles .campaign-article img {
         align-self: center;
     }
-
+    
     .articles .campaign-article .wrap-about-loc {
         width: 30%;
     }
@@ -1609,7 +1610,7 @@
         max-width: 31%;
         position: relative
     }
-
+    
     .pict-box-campaigns {
         border-radius: 5px;
         margin: 10px;
@@ -1619,7 +1620,7 @@
         position: relative;
         overflow: hidden;
     }
-
+    
     .delete-campaigns {
         position: absolute;
         top: 10px;
@@ -1722,14 +1723,17 @@
         border-left: 1px solid #ccc;
         padding: 0 20px;
     }
+    
     .qa {
         display: inline-block;
         padding: 0 20px;
         vertical-align: middle;
     }
+    
     .qa .btn-group {
         vertical-align: middle;
     }
+    
     .qa a {
         color: inherit;
     }
@@ -1737,44 +1741,45 @@
     .channels strong {
         margin-right: 10px;
     }
+    
     .qa strong {
         margin-right: 10px;
         display: inline-block;
         vertical-align: middle;
     }
+    
     .rate strong {
         margin-right: 10px;
     }
-
+    
     .date-picker {
         display: inline-block;
         border-right: 1px solid #ccc;
         padding: 0 20px;
         cursor: pointer;
     }
-
+    
     .date-picker span {
         color: #9ca0ac;
     }
-
+    
     .date-picker img {
         max-height: 25px;
         margin: 0 15px;
         margin-top: -5px;
         vertical-align: middle;
     }
-
+    
     .float-r {
         float: right;
     }
-
+    
     .emoji {
         position: absolute;
         top: 35px;
         right: 35px;
         opacity: .6;
     }
-
     /*
 OLD STARS
 .stars b img{ width: 15px}
