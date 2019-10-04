@@ -1625,14 +1625,20 @@
         overflow: hidden;
     }
 
+    .add-to-campaign {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
     .delete-campaigns {
         position: absolute;
         top: 10px;
         right: 10px;
-        background: url(../img/delete.png) no-repeat center center;
+        background: url(../img/small-delete.png) no-repeat center center;
         padding: 15px;
         border-radius: 50%;
-        background-color: rgb(255, 255, 255, .9);
+        background-color: #41b9af;
     }
     
     .pict-preview {
@@ -2406,6 +2412,7 @@ OLD STARS
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.27);
         display: none;
+        z-index: 1;
     }
     
     .popupWrap.visible {
@@ -2425,7 +2432,24 @@ OLD STARS
         position: relative
     }
     
-    .popupWrap .insidePopup .closepopup {
+    .galleryPopup {
+        background-color: #fff;
+        max-width: 80%;
+        margin: 0 auto;
+        border-radius: 5px;
+        padding: 50px;
+        margin-top: 100px;
+        max-height: calc( 100% - 200px);
+        overflow: auto;
+        position: relative
+    }
+
+    .image-resize {
+        max-height: 300px;
+    }
+    
+    .popupWrap .insidePopup .closepopup,
+    .popupWrap .galleryPopup .closepopup {
         position: absolute;
         top: 20px;
         right: 20px;
