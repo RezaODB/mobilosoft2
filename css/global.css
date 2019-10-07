@@ -96,6 +96,16 @@
         background-color: #bfdcda;
     }
     
+.btn.btn-copy {
+    padding: 15px 30px;
+    background: url("../img/icon_copy.png") no-repeat center center;
+}
+
+.btn.btn-copy:hover {
+    background-color: #bfdcda;
+    background: url("../img/icon_copy_hover.png") no-repeat center center;
+}
+
     .btn b {
         display: inline-block;
         vertical-align: middle;
