@@ -2469,3 +2469,30 @@ OLD STARS
         font-size: 0;
         display: block;
     }
+
+    /* Post preview */
+.post-preview * {
+	box-sizing: content-box;
+}
+
+.post-preview.post-facebook {
+	margin: 0 auto;
+	max-width: 476px;
+}
+
+.post-preview.post-facebook > div:not(.post-channel) > div *:not(.fa) {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+}
+
+.post-preview.post-google {
+	margin: 0 auto;
+	max-width: 406px;
+}
+
+.post-preview.post-google > div:not(.post-channel) > div *:not(.fa) {
+	font-family: 'Roboto', arial, sans-serif;
+}
+
+.post-preview.post-storelocator > div:not(.post-channel) > div *:not(.fa) {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
