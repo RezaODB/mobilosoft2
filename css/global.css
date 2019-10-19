@@ -95,11 +95,11 @@
     .btn.btn-level2:hover {
         background-color: #bfdcda;
     }
-    
-    .btn.btn-copy {
+    /*.btn.btn-copy {
         padding: 15px 30px;
+        background-color: #bfdcda;
         background: url("../img/icon_copy.png") no-repeat center center;
-    }
+    }*/
     
     .btn.btn-copy:hover {
         background-color: #bfdcda;
