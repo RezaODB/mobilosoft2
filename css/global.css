@@ -1867,6 +1867,11 @@ select.validoption {
     margin: 0;
 }
 
+.chartBox .chartLegend {
+    padding: 20px;
+    font-size: 12px;
+}
+
 
 /*
 OLD STARS

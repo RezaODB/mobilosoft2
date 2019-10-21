@@ -64,7 +64,7 @@
         <ul class="breadcrumb">
             <li><a href="#">Lorem</a></li>
             <li><a href="#">Reporting</a></li>
-            <li class="active">Location</li>
+            <li class="active">inbox</li>
         </ul>
         <div class="profil">
             <div class="profil-pict"><img src="https://dummyimage.com/100x100/000/fff" /></div>
@@ -125,8 +125,8 @@
         <div class="boxlined">
             <div class="aside-left">
                 <ul class="subNavTabs">
-                    <li><a href="location.html" class="btn-nav active">Location</a></li>
-                    <li><a href="inbox.html" class="btn-nav ">Inbox</a></li>
+                    <li><a href="location.html" class="btn-nav ">Location</a></li>
+                    <li><a href="inbox.html" class="btn-nav active">Inbox</a></li>
 
                 </ul>
             </div>
@@ -138,20 +138,16 @@
             <div class="box-title boxflex">
                 <div class="aside-left">
                     <strong>Filter :</strong>
-                    <ul class="wrap-socials filtLine">
 
-                        <li>
-                            <a href="#" class="social-icon"><img src="../img/icon-google.png"></a>
-                        </li>
-
-                    </ul>
                     <div class="date-picker filtLine" id="reportrange">
                         <img src="../img/icon-calendar.png" /><span></span
                         ><img src="../img/select-arrow.png" />
                       </div>
                      <div class="filtLine">
 
-                      <a href="" class="btn btn-level2 btn-small btn-vsmall float-r">All</a>
+                      <a href="" class="btn btn-level2 btn-small btn-vsmall">All</a>
+                      <a href="" class="btn btn-level2 btn-small btn-vsmall ">By month</a>
+                      <a href="" class="btn btn-level2 btn-small btn-vsmall ">By Year</a>
                     </div>
                 </div>
                 <div class="aside-right">
@@ -164,61 +160,57 @@
                 <div class="row">
                     <div class="col">
                        <div class="chartBox">
-                           <h4>Impressions totales</h4>
-                           <div id="chart_curve" style="width: 100%; "></div>
-                        </div>
-                    </div>
-                    <div class="col">
-                            <div class="chartBox">
-                                    <h4>Appels</h4>
-                                     <div id="chart_div_pie" style="width: 100%;"></div>
-                                 </div>
+                           <h4>Average rating<span class="sticker stick-nbr">4.5/5</span></h4>
+                        <div id="chart_curve" style="width: 100%; "></div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                            <div class="chartBox">
-                                    <h4>Demandes d'itinéraires</h4>
-                                    <div id="chart_curve2" style="width: 100%; "></div>
-                                 </div>
-                    </div>
-                    <div class="col">
-                        <div class="chartBox">
-                            <h4>Appels clic website</h4>
-                            <div id="chart_curve3" style="width: 100%; "></div>
-                        </div>
-                    </div>
+                <div class="col">
+
                 </div>
-
-                <div class="row">
-                        <div class="col">
-                                <div class="chartBox">
-                                        <h4>Stores visits</h4>
-                                        <div id="chart_curve4" style="width: 100%; "></div>
-                                     </div>
-                        </div>
-                        <div class="col">
-                            <div class="chartBox">
-                                <h4>Valeurs par location</h4>
-                                <div id="chart_curve5" style="width: 100%; "></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                            <div class="col">
-                                    <div class="chartBox">
-                                            <h4>Chiffre d'affaire associé</h4>
-                                            <div id="chart_column" style="width: 100%; "></div>
-                                            <div class="chartLegend">
-                                                <p>Explication qu'est ce que le chiffre d'affaire associé : Lorem ipsumd olod sit amet</p>
-                                            </div>
-                                         </div>
-                            </div>
-                          
-                        </div>
-
-                   
             </div>
+            <div class="row">
+                <div class="col">
+                    <div class="chartBox">
+                        <h4>Review by source</h4>
+                        <div id="chart_column" style="width: 100%; "></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="chartBox">
+                        <h4>Evolution des reviews par source</h4>
+                        <div id="chart_curve2" style="width: 100%; "></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="chartBox">
+                        <h4>Nombre de reviews</h4>
+                        <div id="chart_column2" style="width: 100%; "></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="chartBox">
+                        <h4>Evolution du nombre de reviews</h4>
+                        <div id="chart_curve3" style="width: 100%; "></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="chartBox">
+                        <h4>Rating distribution</h4>
+                        <div id="chart_div_pie" style="width: 100%; height: 500px;"></div>
+                        <div class="chartLegend">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
         </div>
 
 
@@ -251,13 +243,20 @@
             dataPie.addColumn('string', 'Topping');
             dataPie.addColumn('number', 'Slices');
             dataPie.addRows([
-                ['Facebook', 4],
-                ['Google', 1],
+                ['***** stars', 200],
+                ['**** stars', 100],
+                ['*** stars', 100],
+                ['** stars', 100],
+                ['* stars', 100],
             ]);
 
 
             var optionsPie = {
-                colors: ['#41b9af', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6']
+                colors: ['#41b9af', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'],
+                pieSliceText: 'label',
+                legend: {
+                    position: 'bottom'
+                },
             };
 
 
@@ -268,32 +267,34 @@
             // CURVE EXEMPLE
             // ************
 
-        var dataCurve = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses', 'Lorem', 'Ipsum'],
-          ['2004',  1000,      400,      1200,      300],
-          ['2005',  1170,      460,      1400,      1400],
-          ['2006',  660,       1120,      800,      200],
-          ['2007',  1030,      540,      600,      650]
-        ]);
+            var dataCurve = google.visualization.arrayToDataTable([
+                ['Year', 'Google', 'Facebook'],
+                ['2004', 1000, 400],
+                ['2005', 1170, 460],
+                ['2006', 660, 1120],
+                ['2007', 1030, 540]
+            ]);
 
-        var optionsCurve = {
-          curveType: 'function',
-          legend: { position: 'bottom' },
-          colors: ['#41b9af', '#e6693e', '#f6b223', '#5496c7', '#f6c7b6']
+            var optionsCurve = {
+                curveType: 'function',
+                legend: {
+                    position: 'bottom'
+                },
+                colors: ['#41b9af', '#e6693e', '#f6b223', '#5496c7', '#f6c7b6']
 
-        };
+            };
 
-        var chartCurve = new google.visualization.LineChart(document.getElementById('chart_curve'));
-        var chartCurve2 = new google.visualization.LineChart(document.getElementById('chart_curve2'));
-        var chartCurve3 = new google.visualization.LineChart(document.getElementById('chart_curve3'));
-        var chartCurve4 = new google.visualization.LineChart(document.getElementById('chart_curve4'));
-        var chartCurve5 = new google.visualization.LineChart(document.getElementById('chart_curve5'));
+            var chartCurve = new google.visualization.LineChart(document.getElementById('chart_curve'));
+            var chartCurve2 = new google.visualization.LineChart(document.getElementById('chart_curve2'));
+            var chartCurve3 = new google.visualization.LineChart(document.getElementById('chart_curve3'));
+            //var chartCurve4 = new google.visualization.LineChart(document.getElementById('chart_curve4'));
+            //var chartCurve5 = new google.visualization.LineChart(document.getElementById('chart_curve5'));
 
-        chartCurve.draw(dataCurve, optionsCurve);
-        chartCurve2.draw(dataCurve, optionsCurve);
-        chartCurve3.draw(dataCurve, optionsCurve);
-        chartCurve4.draw(dataCurve, optionsCurve);
-        chartCurve5.draw(dataCurve, optionsCurve);
+            chartCurve.draw(dataCurve, optionsCurve);
+            chartCurve2.draw(dataCurve, optionsCurve);
+            chartCurve3.draw(dataCurve, optionsCurve);
+            // chartCurve4.draw(dataCurve, optionsCurve);
+            //chartCurve5.draw(dataCurve, optionsCurve);
 
 
             // ************
@@ -302,22 +303,28 @@
 
 
             var dataColumn = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2004',  1000,      400],
-          ['2005',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
-        ]);
-        
+                ['Year', 'Facebook', 'Google'],
+                ['2004', 1000, 400],
+                ['2005', 1170, 460],
+                ['2006', 660, 1120],
+                ['2007', 1030, 540]
+            ]);
 
-        var optionsColumn = {
-            legend: { position: 'bottom'},
-            bar: { groupWidth: '75%' },
-            isStacked: true,
-        };
-        var chartColumn = new google.visualization.ColumnChart(document.getElementById('chart_column'));
 
-        chartColumn.draw(dataColumn, optionsColumn);
+            var optionsColumn = {
+                legend: {
+                    position: 'bottom'
+                },
+                bar: {
+                    groupWidth: '75%'
+                },
+                isStacked: true,
+            };
+            var chartColumn = new google.visualization.ColumnChart(document.getElementById('chart_column'));
+            chartColumn.draw(dataColumn, optionsColumn);
+
+            var chartColumn2 = new google.visualization.ColumnChart(document.getElementById('chart_column2'));
+            chartColumn2.draw(dataColumn, optionsColumn);
 
 
             // ************
@@ -347,7 +354,7 @@
             var chartArea = new google.visualization.AreaChart(document.getElementById('chart_div_area'));
             chartArea.draw(dataArea, optionsArea);
         }
-  
+
         $(function() {
             var start = moment().subtract(29, "days");
             var end = moment();
