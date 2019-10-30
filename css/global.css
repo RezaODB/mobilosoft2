@@ -266,7 +266,7 @@ h4 {
     border-radius: 5px;
     background-color: #fff;
     box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.11);
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 
@@ -292,6 +292,12 @@ h4 {
 .btn-group .toggle.active,
 .btn-group .toggle:hover {
     background-color: #8fbd55;
+    color: #fff;
+}
+
+.btn-group .toggle.active.toggleInactif,
+.btn-group .toggle.toggleInactif:hover {
+    background-color: #e64032;
     color: #fff;
 }
 
