@@ -108,7 +108,7 @@
         <div class="wrapper-title">
             <h1 href="/inbox.html" class="hub-active">Inbox<span class="sticker stick-nbr">10</span></h1>
         </div>
-        
+
         <!--   <div class="box-tag">
             <span class="tag">Tag lorem ipsum <a href="#" class="delete"></a></span>
             <span class="tag">Tag lorem ipsum <a href="#" class="delete"></a></span>
@@ -117,14 +117,16 @@
         <!-- @Title of the page -->
 
         <!-- ******* SUBNAV ******* -->
-        <div class="boxlined boxflex">
+        <div class="boxlined boxflex" id="boxInbox">
+            <a href="#" class="btn btn-level2 btn-small btn-reset"><b><img src="img/btn-reset.svg"/> </b>Reset filters</a>
+
             <div class="aside-left">
                 <div class="qa">
                     <strong>Q&A :</strong>
-                        <div class="btn-group btn-group-small">
-                            <button class="toggle active"><small><a href="/inbox.html">OFF</a></small></button>
-                            <button class="toggle"><small><a href="/q&a.html">ON</a></small></button>
-                        </div>                        
+                    <div class="btn-group btn-group-small">
+                        <button class="toggle active"><small><a href="/inbox.html">OFF</a></small></button>
+                        <button class="toggle"><small><a href="/q&a.html">ON</a></small></button>
+                    </div>
                 </div>
                 <div class="channels">
                     <strong>Channels :</strong>
@@ -147,7 +149,7 @@
                 </div>
             </div>
             <div class="aside-right">
-                <div  class="date-picker" id="reportrange">
+                <div class="date-picker" id="reportrange">
                     <img src="img/icon-calendar.png"><span></span><img src="img/select-arrow.png">
                 </div>
 
@@ -176,8 +178,7 @@
                     <div class="bulk">
 
                         <strong>Bulk </strong> <a href="" class="btn btn-level2 btn-small btn-vsmall">Skip</a>
-                        
-                        <a href="" class="btn btn-level2 btn-small btn-vsmall float-r">Reset filters</a>
+
                     </div>
                 </div>
 
@@ -409,7 +410,7 @@
                         <button class="toggle active">Reply</button>
                         <button class="toggle ">Note</button>
                     </div>
-                    <a href=""><img class="emoji" src="img/smile.png"></a>                    
+                    <a href=""><img class="emoji" src="img/smile.png"></a>
                     <textarea></textarea>
                     <div class="wrap-btns">
                         <a href="" class="btn btn-level2 btn-small">Skip</a>
@@ -436,31 +437,31 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <script type="text/javascript">
         $(function() {
-        
+
             var start = moment().subtract(29, 'days');
             var end = moment();
-        
+
             function cb(start, end) {
                 $('#reportrange span').html(start.format('DD MMM YYYY') + ' - ' + end.format('DD MMM YYYY'));
             }
-        
+
             $('#reportrange').daterangepicker({
                 startDate: start,
                 endDate: end,
                 ranges: {
-                   'Today': [moment(), moment()],
-                   'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                   'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-                   'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                   'This Month': [moment().startOf('month'), moment().endOf('month')],
-                   'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
                 }
             }, cb);
-        
+
             cb(start, end);
-        
+
         });
-        </script>
+    </script>
 </body>
 
 </html>

@@ -254,6 +254,10 @@ h4 {
     padding: 3px;
 }
 
+.btn-reset b {
+    margin-right: 5px;
+}
+
 .btn-nav.btn-dot::before {
     margin-right: 5px;
 }
@@ -1904,6 +1908,18 @@ OLD STARS
     border-bottom: 1px solid #eee;
 }
 
+#boxInbox {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#boxInbox .btn-reset {
+    position: absolute;
+    top: -19px;
+    right: 30px;
+}
+
 #inbox .inbox-actions strong {
     margin-right: 10px
 }
@@ -1915,6 +1931,26 @@ OLD STARS
     border-radius: 5px 0 0 5px;
     max-height: 500px;
     overflow-Y: scroll;
+    height: 500px;
+}
+
+#inbox .inbox-aside .noResults {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f6f9;
+    font-size: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+#inbox .inbox-aside .noResults span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#inbox .inbox-aside .noResults img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 #inbox .inbox-aside .resume {
