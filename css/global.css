@@ -581,6 +581,17 @@ h4 {
     border-collapse: collapse;
 }
 
+.tableC {
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+.cellC {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .table td,
 .table th {
     text-align: left;
@@ -1674,7 +1685,6 @@ select.validoption {
     border-color: rgb(230, 230, 230);
     border-radius: 5px;
     margin: 1%;
-    align-self: flex-end;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
@@ -1683,6 +1693,66 @@ select.validoption {
     min-width: 31%;
     max-width: 31%;
     position: relative
+}
+
+.pict-box.pict-vertical {
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.pict-box.pict-vertical .nopict-download {
+    width: 100%;
+    min-height: 180px;
+    height: 100%;
+}
+
+.pict-box.pict-vertical .nopict-download2 {
+    width: 100%;
+    min-height: 180px;
+    height: 100%;
+    text-align: center;
+}
+
+.pict-box.pict-vertical .pict-preview {
+    width: 100%;
+    display: block;
+}
+
+.pict-box.pict-vertical .pict-about {
+    width: 100%;
+    display: block;
+}
+
+.pict-box.pict-vertical .pict-about .pict-infos {
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.pict-box.pict-vertical .pict-about .pict-control {
+    border-top: 1px solid #ccc;
+    text-align: left;
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pict-control a.pictBtn {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.pict-control .pictBtn img {
+    height: 20px;
+}
+
+.downloadBox {
+    max-width: 400px;
+    min-height: 200px;
+    text-align: center;
+    width: 100%;
+    height: 200px;
 }
 
 .pict-box-campaigns {
@@ -1714,11 +1784,16 @@ select.validoption {
 .pict-preview {
     width: 50%;
     float: left;
+    height: 180px;
+    overflow: hidden;
 }
 
 .pict-preview img {
     display: block;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
 }
 
 .pict-about {
@@ -1771,10 +1846,16 @@ select.validoption {
 }
 
 .nopict-download span {
-    padding: 30px 10px;
+    padding: 30px 0 0 0;
     display: inline-block;
-    margin-top: 50px;
     background: url(../img/btn-plus.png) no-repeat center top / 20px;
+}
+
+.nopict-download2 span {
+    padding: 50px 0 0 0;
+    display: inline-block;
+    background: url(../img/downloadPict.svg) no-repeat center top / 40px;
+    color: #41b9af;
 }
 
 .rating {
