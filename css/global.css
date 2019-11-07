@@ -3145,3 +3145,11 @@ select {
     line-height: 32px;
     margin-right: 6px;
 }
+
+hidden {
+    display: none;
+}
+
+shown {
+    display: block;
+}
