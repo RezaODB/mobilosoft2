@@ -521,6 +521,18 @@ h4 {
     padding: 0 20px;
 }
 
+.aside-left .filter-select.filter-select-simple {
+    border: none;
+}
+
+.aside-left .filter-select.filter-select-simple a {
+    margin: 0 5px;
+}
+
+.filter-select-simple strong {
+    margin-right: 5px;
+}
+
 .box-subTitle .search-loc {
     float: right;
 }
@@ -1876,8 +1888,8 @@ select.validoption {
 }
 
 .pict-box.pict-vertical {
-    min-width: 20%;
-    max-width: 20%;
+    min-width: 23%;
+    max-width: 23%;
 }
 
 .pict-box.pict-vertical .nopict-download {
