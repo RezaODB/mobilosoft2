@@ -521,18 +521,6 @@ h4 {
     padding: 0 20px;
 }
 
-.aside-left .filter-select.filter-select-simple {
-    border: none;
-}
-
-.aside-left .filter-select.filter-select-simple a {
-    margin: 0 5px;
-}
-
-.filter-select-simple strong {
-    margin-right: 5px;
-}
-
 .box-subTitle .search-loc {
     float: right;
 }
