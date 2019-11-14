@@ -1639,6 +1639,14 @@ h1 .sticker.stick-nbr {
     position: relative;
 }
 
+.wrapper-title-center {
+    text-align: center;
+}
+
+.wrapper-title-center h1 {
+    margin-bottom: 20px;
+}
+
 .wrapper-title .btns-group {
     top: 0;
     right: 0;
@@ -3367,6 +3375,7 @@ shown {
     margin: 0 auto;
     display: flex;
     align-content: space-between;
+    margin-bottom: 70px;
 }
 
 .walletBox small {
@@ -3382,7 +3391,7 @@ shown {
 
 #sect-wallet {
     position: relative;
-    padding: 100px 100px 0 110px;
+    padding: 0px 100px 0 110px;
 }
 
 .walletBox .recharge {
@@ -3402,7 +3411,7 @@ shown {
     background-color: #41b9af;
     position: absolute;
     left: 0;
-    top: 100px;
+    top: 0px;
     left: 80px;
     font-size: 0;
 }
