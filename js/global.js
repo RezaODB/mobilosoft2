@@ -43,7 +43,8 @@ $(".rating a").on("mouseover", function() {
     $(this).addClass("rated");
 });
 
-$('.calendar').datepicker();
+
+
 
 /* popup */
 $('.openpopup').on('click', function(event) {
@@ -59,6 +60,19 @@ $('.closepopup').on('click', function(event) {
 
 
 /* date picker */
+
+/* calendars > simple */
+
+$(function() {
+    $('.calendar').daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: true,
+        minYear: 1901,
+        maxYear: parseInt(moment().format('YYYY'), 10)
+    });
+});
+
+/* report range  */
 
 $(function() {
     var start = moment().subtract(29, "days");

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>Mobilosoft</title>
     <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -36,7 +38,7 @@
         <div class="line"><a href="#" class="btn btn-small"><b><img src="img/btn-bookmark.svg"/> </b></a></div>
 
 
-        <div class="line"><a href="#" class="btn btn-level2 btn-small"><b><img src="img/btn-edit.png"/> </b></a></div>
+        <div class="line"><a href="#" class="btn btn-level2 btn-small"><b><img src="img/edit.svg"/> </b></a></div>
         <div class="line"><a href="#" class="btn btn-level2 btn-small"><b><img src="img/btn-copy-green.svg"/> </b></a></div>
         <div class="line"><a href="#" class="btn  btn-small"><b><img src="img/btn-copy.svg"/> </b></a></div>
 
@@ -81,6 +83,7 @@
             <span class="sticker">Label 1</span>
             <span class="sticker stick-warning">Label 1</span>
             <span class="sticker stick-soft">Label 1</span>
+            <span class="sticker stick-valid">Label 1</span>
             <span class="sticker stick-nbr">10</span>
         </div>
     </section>
@@ -210,13 +213,13 @@
 
     <section>
         <h2>Formulaires</h2>
+
+
         <div class="line">
             <label>Lorem ipsum</label>
             <input type="text" placeholder="lorem ipsum">
         </div>
-        <div class="line">
-            <input type="text" class="calendar" placeholder="lorem ipsum">
-        </div>
+
         <div class="line">
             <input type="file">
         </div>
@@ -265,110 +268,147 @@
         </div>
 
         <div class="line">
-            <h4>Exemple de radios</h4>
-            <div class="radio">
-                <label>
+            <h4>Dates fields</h4>
+            <div class="line">
+                <input type="text" class="calendar">
+            </div>
+            <div class="line">
+                <input type="text" class="reportrange">
+            </div>
+            <div class="line">
+                <div class="date-picker  reportrange">
+                    <img src="img/icon-calendar.png"><span>20 Oct 2019 - 18 Nov 2019</span><img src="img/select-arrow.png">
+                </div>
+            </div>
+
+            <div class="line">
+
+
+
+                <div class="row">
+
+                    <div class="col">
+                        <label>Date de début</label>
+                        <input type="text" class="calendar" placeholder="">
+
+                    </div>
+                    <div class="col">
+                        <label>Date de fin</label>
+                        <input type="text" class="calendar" placeholder="">
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="line">
+                <h4>Exemple de radios</h4>
+                <div class="radio">
+                    <label>
                     <div class="radioStyle">
                         <input type="radio" name="lorem5" value="lorem5" required="">
                         <span class="radio-el"></span>
                     </div>
                     <span class="label">Oui</span>
                 </label>
-                <label>
+                    <label>
                     <div class="radioStyle">
                         <input type="radio" name="lorem5" value="lorem6" required="">
                         <span class="radio-el"></span>
                     </div>
                     <span class="label">Non</span>
                 </label>
+                </div>
+
             </div>
 
-        </div>
-
-        <div class="line">
-            <h4>Exemple de radios alignés</h4>
-            <div class="radio radioLine">
-                <label>
+            <div class="line">
+                <h4>Exemple de radios alignés</h4>
+                <div class="radio radioLine">
+                    <label>
                     <div class="radioStyle">
                         <input type="radio" name="lorem3" value="lorem3" required="">
                         <span class="radio-el"></span>
                     </div>
                     <span class="label">Oui</span>
                 </label>
-                <label>
+                    <label>
                     <div class="radioStyle">
                         <input type="radio" name="lorem3" value="lorem4" required="">
                         <span class="radio-el"></span>
                     </div>
                     <span class="label">Non</span>
                 </label>
+                </div>
+
             </div>
 
-        </div>
 
 
+            <div class="line">
+                <h4>Exemple de checkbox</h4>
 
-        <div class="line">
-            <h4>Exemple de checkbox</h4>
-
-            <div class="checkbox">
-                <label>
+                <div class="checkbox">
+                    <label>
                     <div class="checkboxStyle">
                         <input type="checkbox" name="lorem" value="lorem" required="">
                         <span class="checkbox-el"></span>
                     </div>
                     <span class="label">Oui</span>
                 </label>
-                <label>
+                    <label>
                     <div class="checkboxStyle">
                         <input type="checkbox" name="lorem2" value="lorem2" required="">
                         <span class="checkbox-el"></span>
                     </div>
                     <span class="label">Oui</span>
                 </label>
+                </div>
+
             </div>
 
-        </div>
 
 
-
-        <form>
-            <div class="row">
-                <div class="col">
-                    <label><input type="text"></label>
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <label><input type="text"></label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label><input type="text"></label>
+                <div class="row">
+                    <div class="col">
+                        <label><input type="text"></label>
+                    </div>
+                    <div class="col">
+                        <label><input type="text"></label>
+                    </div>
                 </div>
-                <div class="col">
-                    <label><input type="text"></label>
+                <div class="row">
+                    <div class="col">
+                        <label><input type="text"></label>
+                    </div>
+                    <div class="col">
+                        <label><input type="text"></label>
+                    </div>
+                    <div class="col">
+                        <label><input type="text"></label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label><input type="text"></label>
+                <div class="row">
+                    <div class="col">
+                        <label><input type="text"></label>
+                    </div>
+                    <div class="col">
+                        <label><input type="text"></label>
+                    </div>
+                    <div class="col col6">
+                        <label><input type="text"></label>
+                    </div>
                 </div>
-                <div class="col">
-                    <label><input type="text"></label>
-                </div>
-                <div class="col">
-                    <label><input type="text"></label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label><input type="text"></label>
-                </div>
-                <div class="col">
-                    <label><input type="text"></label>
-                </div>
-                <div class="col col6">
-                    <label><input type="text"></label>
-                </div>
-            </div>
-        </form>
+            </form>
     </section>
 
     <section>
@@ -443,6 +483,13 @@
         </div>
         <div class="line">
             <div class="btn-group btn-group-small">
+                <button class="toggle active">Actif</button>
+                <button class="toggle toggleInactif ">Inactif</button>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="btn-group btn-group-v-small">
                 <button class="toggle active">Actif</button>
                 <button class="toggle toggleInactif ">Inactif</button>
             </div>
@@ -786,8 +833,62 @@
 
     </section>
 
+    <!-- SECTION CARD CAMPAIGN -->
+
+    <section>
+        <div class="wrap-card-campaign">
+            <div class="card-campaign">
+
+
+                <div class="post-pict">
+                    <img src="http://lorempixel.com/800/500/">
+                    <span class="sticker stick-soft">Draft</span>
+                </div>
+                <div class="post-socials">
+                    <ul>
+                        <li>
+                            <a href="#" class="social-icon"><img src="img/icon-loc.png"></a>
+                        </li>
+                        <li>
+                            <span class="social-icon"><img src="img/icon-google.png"></span>
+                        </li>
+                        <li>
+                            <span class="social-icon warning disabled"><img src="img/icon-google.png"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="post-desc">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+
+                </div>
+                <div class="card-activation">
+
+                    <div class="btn-group btn-group-v-small">
+                        <button class="toggle active">Published</button>
+                        <button class="toggle toggleInactif ">unpublished</button>
+                    </div>
+
+                    <p>Disponible du 02 au 07 novembre</p>
+
+                </div>
+                <div class="card-control">
+
+                    <a href="#" class="pictBtn"><b><img src="img/delete.svg"> </b></a>
+                    <a href="#" class="pictBtn"><b><img src="img/btn-copy-green.svg"> </b></a>
+
+                    <a href="#" class="pictBtn"><b><img src="img/search.svg"> </b></a>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="js/global.js"></script>
 </body>
 
