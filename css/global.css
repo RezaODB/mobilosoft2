@@ -2924,10 +2924,6 @@ select {
     border-color: #e64032;
 }
 
-.post-storelocator .post-container .post-channel {
-    border-color: #000000;
-}
-
 .post-container .post-header {
     padding: 12px 12px 0 12px;
 }
@@ -3009,36 +3005,6 @@ select {
     width: 100%;
 }
 
-
-/*.post-google .post-container .post-header {
-    padding: 16px 16px 0 16px;
-}*/
-
-
-/*  .post-container .post-header .post-avatar a {
-    display: block;
-    font-size: 40px;
-    height: 40px;
-    line-height: 40px;
-    margin-right: 8px;
-    padding-bottom: 3px;
-}
-
-.post-container .post-header .post-avatar a:hover,
-.post-container .post-header .post-avatar a:focus {
-    opacity: 1;
-}*/
-
-
-/*.post-google .post-container .post-header .post-avatar a,
-.post-google .post-container .post-header .post-avatar a:hover,
-.post-google .post-container .post-header .post-avatar a:focus {
-    cursor: default;
-    margin-right: 16px;
-    padding-bottom: 0;
-}
-*/
-
 .post-container .post-header .post-avatar a img {
     border-radius: 50%;
     vertical-align: top;
@@ -3055,11 +3021,6 @@ select {
     margin-left: 16px;
 }
 
-
-/*.post-google .post-container .post-header .post-location {
-    margin: 0;
-}*/
-
 .post-container .post-header .post-location,
 .post-container .post-header .post-location a {
     color: #365899;
@@ -3075,17 +3036,6 @@ select {
     text-decoration: underline;
 }
 
-
-/*.post-google .post-container .post-header .post-location a,
-.post-google .post-container .post-header .post-location a:hover,
-.post-google .post-container .post-header .post-location a:focus {
-    color: #222222;
-    cursor: default;
-    font-weight: normal;
-    line-height: 20px;
-    text-decoration: none;
-}*/
-
 .post-container .post-header .post-meta,
 .post-container .post-header .post-meta a {
     color: #616770;
@@ -3098,16 +3048,6 @@ select {
     opacity: 1;
     text-decoration: underline;
 }
-
-
-/*.post-google .post-container .post-header .post-meta a,
-.post-google .post-container .post-header .post-meta a:hover,
-.post-google .post-container .post-header .post-meta a:focus {
-    color: rgba(0, 0, 0, 0.54);
-    cursor: default;
-    line-height: 20px;
-    text-decoration: none;
-}*/
 
 .post-facebook .post-container .post-content {
     border-bottom: 1px solid #dddfe2;
@@ -3147,6 +3087,53 @@ select {
 .post-container .post-content .post-desc a:focus {
     color: #365899;
     opacity: 1;
+}
+
+
+/* store locator */
+
+.post-storelocator .post-container .post-channel {
+    border-color: #41b9af
+}
+
+.post-storelocator {
+    max-width: 450px;
+    width: 100%;
+}
+
+.post-storelocator .post-container .post-content .post-desc {
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+.post-storelocator .post-container .post-content .post-desc h3 {
+    border-bottom: 1px solid #eff3f5;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    color: #41b9af;
+    font-weight: normal;
+}
+
+.post-storelocator .post-container .post-content .post-desc h6 {
+    color: #c7c7c7;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.post-storelocator .post-container .post-content .post-desc .mobilo_cta {
+    text-decoration: none;
+    background-color: #41b9af;
+    border-radius: 5px;
+    display: inline-block;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 13px;
+    border: 1px solid #41b9af;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 
