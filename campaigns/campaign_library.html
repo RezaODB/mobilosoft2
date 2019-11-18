@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <title>Mobilosoft</title>
-    <link rel="stylesheet" type="text/css" href="../css/global.css" />
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -130,26 +131,46 @@
         <!-- ******* SUBNAV ******* -->
         <div class="boxlined boxflex">
             <div class="aside-left">
-                <div class="filter-select">
-                    <strong>Show</strong>
-                    <div class="wrapSpecialSelect">
-                        <a href="#" class="select-type">All locations</a>
-                        <div class="selectlist">
-                            <ul>
-                                <li><a href="#">lorem ipsum</a></li>
-                                <li>
-                                    <a href="#">lorem ipsum</a>
-                                    <ul class="sublist">
-                                        <li><a href="#">lorem ipsum</a></li>
-                                        <li><a href="#">lorem ipsum</a></li>
-                                        <li><a href="#">lorem ipsum</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">lorem ipsum</a></li>
-                            </ul>
+                <div class="filtLine">
+                    <div class="checkbox">
+                        <label>
+                        <div class="checkboxStyle">
+                            <input type="checkbox" name="lorem" value="lorem" required="">
+                            <span class="checkbox-el"></span>
                         </div>
+                        <span class="label">Permanent</span>
+                    </label>
+
+                    </div>
+
+                </div>
+                <div class="filtLine">
+                    <div class="date-picker  reportrange">
+                        <img src="../img/icon-calendar.png"><span>20 Oct 2019 - 18 Nov 2019</span><img src="../img/select-arrow.png">
                     </div>
                 </div>
+
+                <div class="filtLine">
+                    <div class="select selectLight">
+                        <select>
+                            <option>Lorem ipsum</option>
+                            <option>Lorem ipsum</option>
+                            <option>Lorem ipsum</option>
+                        </select>
+                    </div>
+                </div>
+                <ul class="wrap-socials">
+                    <li>
+                        <a href="#" class="social-icon"><img src="../img/icon-fb.png"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon"><img src="../img/icon-google.png"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon"><img src="../img/icon-loc.png"></a>
+                    </li>
+                </ul>
+
             </div>
             <div class="aside-right">
                 <div class="search-loc">
@@ -320,8 +341,9 @@
     <!-- @MAIN -->
     <!-- **** -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
-    <script src="js/global.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="../js/global.js"></script>
 </body>
 
 </html>

@@ -753,6 +753,7 @@ textarea {
     display: inline-block;
     vertical-align: middle;
     font-size: 15px;
+    margin-bottom: 0;
 }
 
 .radio.radioLine label,
@@ -996,6 +997,14 @@ textarea {
     min-width: 200px;
 }
 
+.selectLight {
+    font-size: 13px;
+    min-width: 100px;
+    padding: 3px 30px 3px 10px;
+    line-height: 13px;
+    background: url(../img/select-arrow.png) no-repeat right 10px center / 10px;
+}
+
 .multiple {
     background: none;
 }
@@ -1014,6 +1023,11 @@ textarea {
     margin: 0;
     background: transparent;
     font-size: 15px;
+}
+
+.selectLight select {
+    font-size: 13px;
+    min-height: 25px;
 }
 
 .select.select-highlighted select {
