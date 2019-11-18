@@ -299,7 +299,9 @@ h4 {
 }
 
 .btn-group .toggle.active,
-.btn-group .toggle:hover {
+.btn-group .toggle.active a,
+.btn-group .toggle:hover,
+.btn-group .toggle:hover a {
     background-color: #8fbd55;
     color: #fff;
 }
@@ -1909,7 +1911,6 @@ select.validoption {
 
 .pict-box.pict-vertical {
     min-width: 23%;
-    max-width: 23%;
 }
 
 .pict-box.pict-vertical .nopict-download {
@@ -2127,8 +2128,6 @@ select.validoption {
 
 .date-picker {
     display: inline-block;
-    /* border-right: 1px solid #ccc;
-    padding: 0 20px;*/
     cursor: pointer;
 }
 
@@ -2141,6 +2140,10 @@ select.validoption {
     margin: 0 15px;
     margin-top: -5px;
     vertical-align: middle;
+}
+
+.date-picker img:first-of-type {
+    margin-left: 0;
 }
 
 .float-r {
@@ -2174,14 +2177,6 @@ select.validoption {
     padding: 20px;
     font-size: 12px;
 }
-
-
-/*
-OLD STARS
-.stars b img{ width: 15px}
-
-.rate .stars{ display: inline-block}
-.rate strong{ margin-right: 10px }*/
 
 .filters-special {
     margin-bottom: 20px
@@ -2745,34 +2740,7 @@ select {
 }
 
 
-/* Post preview */
-
-
-/* .post-preview * {
-    box-sizing: content-box;
-}
-
-.post-preview.post-facebook {
-    margin: 0 auto;
-    max-width: 476px;
-}
-
-.post-preview.post-facebook>div:not(.post-channel)>div *:not(.fa) {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
-}
-
-.post-preview.post-google {
-    margin: 0 auto;
-    max-width: 406px;
-}
-
-.post-preview.post-google>div:not(.post-channel)>div *:not(.fa) {
-    font-family: 'Roboto', arial, sans-serif;
-}
-
-.post-preview.post-storelocator>div:not(.post-channel)>div *:not(.fa) {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}*/
+/* post previews */
 
 .post-preview {
     margin-bottom: 30px;
@@ -3408,6 +3376,12 @@ shown {
 
 /* MOBILE */
 
+@media only screen and (max-width:1200px) {
+    .pict-box.pict-vertical {
+        min-width: 31%;
+    }
+}
+
 @media only screen and (max-width:900px) {
     .expandable {
         width: 50%;
@@ -3494,6 +3468,9 @@ shown {
     .box-title p.intro {
         margin-bottom: 10px
     }
+    .pict-box.pict-vertical {
+        min-width: 43%;
+    }
 }
 
 @media only screen and (max-width:700px) {
@@ -3530,6 +3507,12 @@ shown {
     .wrap-card-campaign .card-campaign {
         width: 100%;
     }
+    .filtLine {
+        display: block;
+        width: 100%;
+        border: none;
+        margin: 10px 0;
+    }
 }
 
 @media only screen and (max-width:650px) {
@@ -3557,5 +3540,8 @@ shown {
     }
     .nopict-box {
         width: 100%
+    }
+    .pict-box.pict-vertical {
+        min-width: 100%;
     }
 }
