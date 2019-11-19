@@ -206,6 +206,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="chartBox">
+                        <h4>Reviews par tags</h4>
+                        <div id="chart_div_pie_tags" style="width: 100%; height: 500px;"></div>
+                        <div class="chartLegend">
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -262,6 +270,21 @@
 
             var chartPie = new google.visualization.PieChart(document.getElementById('chart_div_pie'));
             chartPie.draw(dataPie, optionsPie);
+
+
+            var dataPie2 = new google.visualization.DataTable();
+            dataPie2.addColumn('string', 'Topping');
+            dataPie2.addColumn('number', 'Slices');
+            dataPie2.addRows([
+                ['tag 1', 210],
+                ['tag 2', 400],
+                ['tag 3', 10],
+                ['tag 4', 20],
+                ['tag 5', 3],
+            ]);
+
+            var chartPie2 = new google.visualization.PieChart(document.getElementById('chart_div_pie_tags'));
+            chartPie2.draw(dataPie2, optionsPie);
 
             // ************
             // CURVE EXEMPLE
