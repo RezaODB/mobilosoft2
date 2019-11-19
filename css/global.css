@@ -889,7 +889,7 @@ input::placeholder {
 }
 
 input.calendar {
-    background: url(../img/icon-calendar.png) no-repeat right 20px center / auto 56%
+    background: url(../img/icon-calendar.svg) no-repeat right 20px center / auto 56%
 }
 
 input[type="password"] {
@@ -2144,6 +2144,7 @@ select.validoption {
 
 .date-picker img:first-of-type {
     margin-left: 0;
+    width: 22px;
 }
 
 .float-r {
