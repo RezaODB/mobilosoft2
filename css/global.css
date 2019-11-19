@@ -213,7 +213,7 @@ h4 {
 .delete {
     width: 15px;
     height: 15px;
-    background: url(../img/delete.png) no-repeat center center;
+    background: url(../img/delete_cross.svg) no-repeat center center / 20px;
     display: inline-block;
     padding: 20px;
 }
@@ -357,7 +357,7 @@ h4 {
 
 .tag .delete {
     display: inline-block;
-    background: url(../img/small-delete.png) no-repeat;
+    background: url(../img/delete_cross.svg) no-repeat;
     width: 10px;
     height: 10px;
     vertical-align: middle;
@@ -374,7 +374,7 @@ h4 {
 }
 
 .tag-edit:hover {
-    background: url(../img/small-delete.png) no-repeat right 5px center;
+    background: url(../img/delete_cross.svg) no-repeat right 5px center;
     background-color: #f5f6fa
 }
 
@@ -990,7 +990,7 @@ textarea {
     border-style: solid;
     border-radius: 5px;
     background-color: rgba(245, 246, 250, 0.459);
-    background: url(../img/select-arrow.png) no-repeat right 20px center / 10px;
+    background: url(../img/select-arrow.svg) no-repeat right 20px center / 14px;
     box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.07);
     display: block;
     width: 100%;
@@ -1004,7 +1004,7 @@ textarea {
     min-width: 100px;
     padding: 3px 30px 3px 10px;
     line-height: 13px;
-    background: url(../img/select-arrow.png) no-repeat right 10px center / 10px;
+    background: url(../img/select-arrow.svg) no-repeat right 10px center / 14px;
 }
 
 .multiple {
@@ -1037,7 +1037,7 @@ textarea {
 }
 
 .select-type {
-    background: url(../img/select-arrow.png) no-repeat right 0px center / 10px;
+    background: url(../img/select-arrow.svg) no-repeat right 0px center / 10px;
     padding-right: 20px;
     display: inline-block;
     color: #3e3e3e
@@ -1633,9 +1633,9 @@ header .profil-wallet {
     float: right;
     border-right: 1px solid #c6c9d5;
     color: #c6c9d5;
-    padding: 5px 10px 5px 30px;
+    padding: 5px 10px 5px 27px;
     margin: 10px 25px;
-    background: url(../img/icon-wallet.png) no-repeat left center;
+    background: url(../img/icon-wallet.svg) no-repeat left center / 20px;
 }
 
 header .profil-wallet a {
@@ -1988,7 +1988,7 @@ select.validoption {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: url(../img/small-delete.png) no-repeat center center;
+    background: url(../img/delete_cross.svg) no-repeat center center;
     padding: 15px;
     border-radius: 50%;
     background-color: #41b9af;
@@ -2140,6 +2140,7 @@ select.validoption {
     margin: 0 15px;
     margin-top: -5px;
     vertical-align: middle;
+    width: 13px;
 }
 
 .date-picker img:first-of-type {
@@ -2479,7 +2480,8 @@ select.validoption {
 .choose-media-format .box .boostType {
     position: absolute;
     right: 10px;
-    top: 10px
+    top: 10px;
+    width: 20px;
 }
 
 .addition {
@@ -2650,7 +2652,7 @@ select.validoption {
     color: #3e3e3e;
     font-weight: bold;
     border-radius: 5px;
-    background: #fff url(../img/select-arrow.png) no-repeat right 10px center / 10px;
+    background: #fff url(../img/select-arrow.svg) no-repeat right 10px center / 10px;
 }
 
 .dropdown-content {
@@ -3544,5 +3546,8 @@ shown {
     }
     .pict-box.pict-vertical {
         min-width: 100%;
+    }
+    .row {
+        display: block;
     }
 }
