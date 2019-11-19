@@ -30,20 +30,24 @@ $(".rating a").click(function(event) {
 });
 
 
-$(".rating a").on("mouseover", function() {
+$(document).on("mouseover", ".rating a", function() {
 
     var id = $(this).parent().attr("id");
-    $("#" + id + ".rating a").each(function(i, v) {
+    var isRated = false;
+    if ($(this).hasClass("rated")) {
+        isRated = true;
+    }
+    $("#" + id + ".rating a").each(function (i, v) {
         $(v).removeClass("rated");
     });
 
     $(this).prevAll().each(function(i, v) {
         $(v).addClass("rated");
     });
-    $(this).addClass("rated");
+    if (!isRated) {
+        $(this).addClass("rated");
+    }
 });
-
-
 
 
 /* popup */
