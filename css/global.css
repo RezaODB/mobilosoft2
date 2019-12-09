@@ -454,6 +454,10 @@ h4 {
     padding: 5px 10px
 }
 
+.sticker.stick-small {
+    padding: 3px 7px;
+}
+
 
 /* box */
 
@@ -631,6 +635,10 @@ h4 {
     padding: 0 15px;
 }
 
+.filtLine.noLine {
+    border-right: none;
+}
+
 
 /* table */
 
@@ -665,6 +673,14 @@ h4 {
 
 .table td.actions a {
     vertical-align: middle
+}
+
+.table td.up {
+    background: url(../img/up-arrow.svg) no-repeat right 20px center / 15px;
+}
+
+.table td.down {
+    background: url(../img/down-arrow.svg) no-repeat right 20px center / 15px;
 }
 
 .table tr:nth-child(even) {
@@ -738,6 +754,28 @@ textarea {
     padding: 15px 10px;
     font-size: 15px;
     color: #333;
+}
+
+.symbolEuro,
+.symbolPercent {
+    position: relative;
+}
+
+.symbolEuro:before,
+.symbolPercent:before {
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    right: 5px;
+    padding: 15px 10px;
+}
+
+.symbolEuro:before {
+    content: "€";
+}
+
+.symbolPercent:before {
+    content: "%";
 }
 
 
@@ -1714,7 +1752,6 @@ article h2 {
 .aside-left .wrap-socials {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
 }
 
 .row {
@@ -1763,7 +1800,7 @@ article h2 {
 .row>[class*=col] {
     padding-right: 1%;
     padding-left: 1%;
-    align-self: flex-end;
+    /* align-self: flex-end;*/
 }
 
 .wrapSubmit {
@@ -1784,11 +1821,10 @@ article h2 {
 }
 
 p.intro {
-    font-style: italic;
     color: #7f7f7f;
     margin: 5px 0;
     font-weight: 100;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 20px;
     margin-bottom: 20px
 }
@@ -2160,7 +2196,6 @@ select.validoption {
 }
 
 .chartBox {
-    background-color: #fafbff;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(230, 230, 230);
@@ -2173,6 +2208,38 @@ select.validoption {
     text-align: center;
     padding: 15px;
     margin: 0;
+    background-color: #fafbff;
+    font-size: 17px;
+}
+
+.chartBox .chartSelection {
+    padding: 0 15px 10px 15px;
+    margin: 0;
+    background-color: #fafbff;
+    font-size: 13px;
+    text-align: center;
+}
+
+.chartBox .table {
+    margin-top: 20px
+}
+
+.chartBox .table h5 b {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.chartBox .table th {
+    font-size: 12px;
+}
+
+.chartBox p.intro {
+    padding: 0 15px 20px 15px;
+    margin: 0;
+    text-align: center;
+    font-size: 11px;
+    background-color: #fafbff;
 }
 
 .chartBox .chartLegend {
@@ -2180,8 +2247,35 @@ select.validoption {
     font-size: 12px;
 }
 
+.chartBox .chart {
+    margin-bottom: 20px;
+}
+
 .filters-special {
     margin-bottom: 20px
+}
+
+.cardsInfos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0.5% 20px 0.5%;
+}
+
+.cardInfo {
+    flex: 1
+}
+
+.cardInfo small {
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 3px;
+    opacity: 0.7;
+    display: block;
+}
+
+.cardInfo .nbr {
+    font-size: 33px;
+    font-weight: bold;
 }
 
 
@@ -2488,6 +2582,10 @@ select.validoption {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px
+}
+
+.menu-burger {
+    top: 33Px
 }
 
 .addition .plusOp {

@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mobilosoft</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+</head>
+
+<body>
+    <!-- *************** -->
+    <!-- ASIDE LEFT  NAV -->
+    <!-- *************** -->
+    <aside>
+        <nav>
+            <div class="logo">
+                <a href=""><img src="../img/logo.png" /></a>
+            </div>
+            <ul>
+                <li class="nav-dashboard"><a href="dashboard.html">Dashboard</a></li>
+                <li class="nav-location active"><a href="locations.html">Location</a></li>
+                <li class="nav-post"><a href="post.html">Post</a></li>
+                <li class="nav-inbox"><a href="inbox.html">Inbox</a></li>
+                <li class="nav-reporting"><a href="reporting.html">Reporting</a></li>
+                <li class="nav-settings"><a href="settings/settings.html">Settings</a></li>
+
+            </ul>
+        </nav>
+        <!-- OPEN CLOSE SECTION / EXPANDABLE -->
+        <div class="expandable">
+            <div class="logoExp">
+                <a href=""><img src="../img/logoText.png" /></a>
+            </div>
+            <ul>
+                <li class="nav-dashboard "><a href="dashboard.html">Dashboard <span class="sticker stick-nbr">10</span></a></li>
+                <li class="nav-location active"><a href="locations.html">Location</a></li>
+                <li class="nav-post"><a href="post.html">Post</a></li>
+                <li class="nav-inbox"><a href="inbox.html">inbox</a></li>
+                <li class="nav-reporting"><a href="reporting.html">Reporting</a></li>
+                <li class="nav-settings"><a href="settings/settings.html">Settings</a></li>
+
+            </ul>
+            <div class="context-infos">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedeiusmod tempor incididunt</p>
+                <a href="#" class="btn-nav">Lorem ipsum</a>
+                <a href="#" class="btn-nav">Lorem ipsum</a>
+            </div>
+        </div>
+        <!-- OPEN CLOSE SECTION / EXPANDABLE -->
+
+    </aside>
+    <!-- **************** -->
+    <!-- @ASIDE LEFT  NAV -->
+    <!-- **************** -->
+
+    <!-- ******* -->
+    <!-- HEADER -->
+    <!-- ******* -->
+    <header>
+        <ul class="breadcrumb">
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Reporting</a></li>
+            <li class="active">Location</li>
+        </ul>
+        <div class="profil">
+            <div class="profil-pict"><img src="https://dummyimage.com/100x100/000/fff" /></div>
+
+            <h4 class="profil-name wrapSpecialSelect">
+                <a href="#" class="select-type">Nom prénom</a>
+                <div class="selectlist">
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><a href="#">Website 1</a></li>
+                                <li><a href="#">Website 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tasks</a></li>
+                    </ul>
+                </div>
+
+            </h4>
+
+
+            <ul class="profil-actions">
+                <li>
+                    <a href="#" class="edit"><img src="../img/icon-pencil.png"></a>
+                </li>
+                <li>
+                    <a href="#" class="lock"><img src="../img/icon-locked.png"></a>
+                </li>
+            </ul>
+
+
+        </div>
+        <div class="profil-wallet">
+            <a href="#" class="wallet">My Wallet</a>
+        </div>
+    </header>
+
+    <!-- ******* -->
+    <!-- @HEADER -->
+    <!-- ******* -->
+
+
+    <!-- **** -->
+    <!-- MAIN -->
+    <!-- **** -->
+    <main>
+
+        <!-- Title of the page -->
+        <div class="wrapper-title">
+            <h1>Reporting</h1>
+
+        </div>
+        <!-- @Title of the page -->
+
+        <!-- ******* SUBNAV ******* -->
+        <div class="boxlined">
+            <div class="aside-left">
+                <ul class="subNavTabs">
+                    <li><a href="location.html" class="btn-nav ">Location</a></li>
+                    <li><a href="inbox.html" class="btn-nav ">Inbox</a></li>
+
+                </ul>
+            </div>
+
+            <div class="aside-right">
+                <ul class="subNavTabs">
+                    <li><a href="settings.html" class="btn-nav active">Client assumptions</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- ******* @SUBNAV ******* -->
+
+
+        <div class="box">
+            <div class="box-title">
+                <h2>Settings du reporting</h2>
+            </div>
+            <div class="box-inside">
+
+                <form class="form">
+                    <div class="row">
+                        <div class="col">
+                            <label>Taux d'achat par visite</label>
+                            <div class="symbolEuro"><input type="text" class=""></div>
+                        </div>
+                        <div class="col">
+                            <label>Panier moyen</label>
+                            <div class="symbolPercent"><input type="text" class=""></div>
+                        </div>
+                    </div>
+
+                    <div class="wrapSubmit">
+                        <input type="submit" value="Envoyer" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- **** -->
+    <!-- @MAIN -->
+    <!-- **** -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <script src="../js/global.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+</body>
+
+</html>
