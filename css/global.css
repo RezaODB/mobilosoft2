@@ -1780,6 +1780,7 @@ article h2 {
 
 .chartRow .col {
     align-items: stretch;
+    align-self: initial!important;
 }
 
 .chartRow .col .chartBox {
