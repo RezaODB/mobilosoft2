@@ -16,9 +16,12 @@ $('.bulk-box .close').on('click', function() {
 $('.wrapSpecialSelect').on('click ', function() {
     $(this).children('.selectlist').toggleClass('opened');
 });
+$('input[type="checkbox"]').on('click', function() {
+    $(this).parents('label').toggleClass('labelActive');
 
+});
 
-$('.selectlist').on('mouseleave ', function() {
+$('.selectlist').on('mouseleave', function() {
     $(this).toggleClass('opened');
 });
 
@@ -30,6 +33,8 @@ $(".rating a").click(function(event) {
 });
 
 
+
+
 $(document).on("mouseover", ".rating a", function() {
 
     var id = $(this).parent().attr("id");
@@ -37,7 +42,7 @@ $(document).on("mouseover", ".rating a", function() {
     if ($(this).hasClass("rated")) {
         isRated = true;
     }
-    $("#" + id + ".rating a").each(function (i, v) {
+    $("#" + id + ".rating a").each(function(i, v) {
         $(v).removeClass("rated");
     });
 
