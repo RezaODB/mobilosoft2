@@ -651,7 +651,8 @@ h4 {
 .boxlined .ico {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px
+    margin-right: 10px;
+    width: 20px;
 }
 
 .wrapSubmitGoogle {
@@ -816,7 +817,7 @@ textarea {
 }
 
 .symbolEuro:before {
-    content: "€";
+    content: "â‚¬";
 }
 
 .symbolPercent:before {
@@ -1264,7 +1265,19 @@ a.social-icon:hover {
 
 .social-icon.waiting:after {
     content: '-';
-    background: url(../img/icon-waiting.png) no-repeat center center / cover;
+    background: url(../img/icon-waiting.svg) no-repeat center center / cover;
+    right: -4px;
+    top: -5px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    filter: none;
+    font-size: 0;
+}
+
+.social-icon.valid:after {
+    content: '-';
+    background: url(../img/icon-valid.svg) no-repeat center center / cover;
     right: -4px;
     top: -5px;
     position: absolute;
@@ -1276,7 +1289,7 @@ a.social-icon:hover {
 
 .social-icon.warning:after {
     content: '-';
-    background: url(../img/icon-warning.png) no-repeat center center / cover;
+    background: url(../img/icon-warning.svg) no-repeat center center / cover;
     right: -4px;
     top: -5px;
     position: absolute;
