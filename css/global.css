@@ -64,6 +64,27 @@ h4 {
     margin-bottom: 10px;
 }
 
+.textformat h2 {
+    margin-bottom: 20px;
+}
+
+.textformat p {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.textformat ul {
+    margin-bottom: 10px;
+}
+
+.textformat li {
+    font-size: 13px;
+    line-height: 20px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
 
 /* btns */
 
@@ -316,6 +337,18 @@ h4 {
     color: #fff;
 }
 
+.btn-group.toggleDisabled .toggle.active {
+    background-color: grey;
+}
+
+.btn-group.toggleDisabled {
+    opacity: 0.7;
+}
+
+.btn-group.toggleDisabled button {
+    pointer-events: none;
+}
+
 .noHover {
     pointer-events: none;
 }
@@ -488,6 +521,11 @@ h4 {
 
 .centeredBox .box-footer {
     text-align: center;
+}
+
+.centeredBox .loadMore {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .centeredBox .box-footer a {
@@ -785,6 +823,18 @@ textarea {
     content: "%";
 }
 
+input:-moz-read-only {
+    background-color: #eee;
+    color: #aaa;
+    box-shadow: none;
+}
+
+input:read-only {
+    background-color: #eee;
+    color: #aaa;
+    box-shadow: none;
+}
+
 
 /* checkbox et radio */
 
@@ -1053,7 +1103,7 @@ textarea {
     min-width: 100px;
     padding: 3px 30px 3px 10px;
     line-height: 13px;
-    background: url(../img/select-arrow.svg) no-repeat right 10px center / 14px;
+    background: url(../img/select-arrow.svg) no-repeat right 10px center / 12px;
 }
 
 .multiple {
@@ -1973,6 +2023,10 @@ select.validoption {
     min-width: 23%;
 }
 
+.pict-box.pict-uploaded {
+    max-width: 100%;
+}
+
 .pict-box.pict-vertical .nopict-download {
     width: 100%;
     min-height: 180px;
@@ -2048,7 +2102,7 @@ select.validoption {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: url(../img/delete_cross.svg) no-repeat center center;
+    background: url(../img/delete_cross.svg) no-repeat center center / 40%;
     padding: 15px;
     border-radius: 50%;
     background-color: #41b9af;
@@ -2059,6 +2113,35 @@ select.validoption {
     float: left;
     height: 180px;
     overflow: hidden;
+    position: relative;
+}
+
+.pict-preview .pined {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+.pict-preview .hoverPict {
+    display: none;
+}
+
+.pict-preview:hover .hoverPict {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.481);
+    text-align: center;
+    display: table
+}
+
+.pined {
+    background-color: #f6b223;
+    border-radius: 50%;
+    width: 30px;
+    padding: 5px;
 }
 
 .pict-preview img {
