@@ -817,7 +817,7 @@ textarea {
 }
 
 .symbolEuro:before {
-    content: "â‚¬";
+    content: "€";
 }
 
 .symbolPercent:before {
