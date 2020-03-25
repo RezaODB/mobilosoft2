@@ -81,6 +81,26 @@ $(function() {
     });
 });
 
+/* navigation fix */
+$('.expandable li').hover(
+    function() {
+        $classActive = '.' + $(this).attr('class');
+        $($classActive).addClass("hover");
+    },
+    function() {
+        $($classActive).removeClass("hover");
+    }
+);
+$('nav ul li').hover(
+    function() {
+        $classActive = '.' + $(this).attr('class');
+        $($classActive).addClass("hover");
+    },
+    function() {
+        $($classActive).removeClass("hover");
+    }
+);
+
 /* report range  */
 
 $(function() {
