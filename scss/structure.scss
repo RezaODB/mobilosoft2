@@ -1,0 +1,230 @@
+/* STRUCTURE */
+
+main {
+    padding: 50px 70px 0 150px
+}
+
+.frontmain {
+    padding: 50px 70px 0 70px
+}
+
+.logoLine {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logoLine img {
+    width: 200px
+}
+
+.mainHidden:before {
+    content: '.';
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: -moz-linear-gradient( 90deg, #00b0ff 0%, #032e7d 100%);
+    background-image: -webkit-linear-gradient( 90deg, #00b0ff 0%, #032e7d 100%);
+    background-image: -ms-linear-gradient( 90deg, #00b0ff 0%, #032e7d 100%);
+    width: 80px;
+    z-index: 4;
+    .logo {
+        height: 100px;
+        text-align: center;
+        padding-top: 20px;
+        img {
+            width: 40px;
+        }
+    }
+}
+
+nav ul li a {
+    display: block;
+    height: 70px;
+    width: 100%;
+    font-size: 0
+}
+
+nav ul li.nav-dashboard {
+    background: url(../img/nav-dashboard.svg) no-repeat center center / 30px;
+}
+
+nav ul li.nav-school {
+    background: url(../img/nav-school.svg) no-repeat center center / 30px;
+}
+
+nav ul li.nav-location {
+    background: url(../img/nav-location.svg) no-repeat center center / 30px;
+}
+
+nav ul li.nav-library {
+    background: url(../img/nav-library.png) no-repeat center center / 30px;
+}
+
+nav ul li.nav-post {
+    background: url(../img/nav-post.svg) no-repeat center center / 30px;
+}
+
+nav ul li.nav-inbox {
+    background: url(../img/nav-inbox.svg) no-repeat center center / 30px;
+}
+
+nav ul li.nav-reporting {
+    background: url(../img/nav-reporting.svg) no-repeat center center / 30px;
+}
+
+nav ul li.nav-settings {
+    background: url(../img/nav-settings.svg) no-repeat center center / 30px;
+}
+
+nav ul li.nav-client {
+    background: url(../img/nav-client.png) no-repeat center center / 30px;
+}
+
+nav ul li.nav-status {
+    background: url(../img/nav-status.png) no-repeat center center / 30px;
+}
+
+nav ul li:hover,
+nav ul li.hover,
+nav ul li.active {
+    background-color: #4b98e2;
+}
+
+.expandable {
+    position: fixed;
+    height: 100vh;
+    left: -50%;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+    width: 50%;
+    padding-left: 80px
+}
+
+.expandable .logoExp {
+    height: 100px;
+    border-bottom: 2px solid #f6f7f8;
+    padding: 30px 15px;
+    img {
+        height: 25px;
+    }
+}
+
+.expandable ul li a {
+    color: #3e3e3e;
+    font-size: 19px;
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 30px;
+    font-weight: 100;
+}
+
+.expandable ul li.active,
+.expandable ul li:hover,
+.expandable ul li.hover {
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.expandable ul li.active:after,
+.expandable ul li:hover:after,
+.expandable ul li.hover:after {
+    content: '.';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background-color: var(--color-green);
+    top: 0;
+    z-index: 30;
+}
+
+.expandable ul li.active a,
+.expandable ul li:hover a,
+.expandable ul li.hover a {
+    font-weight: bold
+}
+
+aside:hover .expandable {
+    left: 0
+}
+
+.blackBg {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 1;
+    display: none
+}
+
+aside nav:hover .blackBg {
+    display: block
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaebef;
+    padding: 10px 70px 10px 150px;
+}
+
+header:after {
+    content: '.';
+    clear: both;
+    width: 100%;
+    height: 1px;
+    display: block;
+    font-size: 0;
+}
+
+header .breadcrumb {
+    float: left;
+    margin-top: 13px;
+}
+
+header .mobilointernal {
+    float: right;
+    margin: 0 20px
+}
+
+header .mobilointernal a {
+    font-size: 12px;
+    color: #3e3e3e;
+    font-weight: bold!important;
+}
+
+header .mobilointernal .btn-group .toggle.active,
+header .mobilointernal .btn-group .toggle:hover {
+    background-color: #3679b9
+}
+
+header .profil {
+    float: right;
+}
+
+header .profil-wallet {
+    float: right;
+    border-right: 1px solid #c6c9d5;
+    color: #c6c9d5;
+    padding: 5px 10px 5px 27px;
+    margin: 10px 25px;
+    background: url(../img/icon-wallet.svg) no-repeat left center / 20px;
+}
+
+header .profil-wallet a {
+    color: #c6c9d5;
+}

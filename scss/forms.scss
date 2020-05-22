@@ -1,0 +1,479 @@
+/* forms */
+
+label {
+    display: block;
+    width: 100%;
+    color: #3e3e3e;
+    margin-bottom: 10px
+}
+
+.mainLabel {
+    font-weight: bold;
+    display: inline-block
+}
+
+.wrap-label {
+    display: flex;
+    margin-bottom: 10px
+}
+
+.wrap-label label {
+    align-self: center;
+    margin: 0 0 0px 10px
+}
+
+.wrap-label .btn-group {
+    align-self: center;
+}
+
+input[type="date"],
+input[type="datetime-local"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    border-width: 1.22px;
+    border-color: rgb(226, 230, 239);
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgba(245, 246, 250, 0.459);
+    box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.07);
+    display: block;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+.symbolEuro,
+.symbolPercent {
+    position: relative;
+}
+
+.symbolEuro:before,
+.symbolPercent:before {
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    right: 5px;
+    padding: 15px 10px;
+}
+
+.symbolEuro:before {
+    content: "€";
+}
+
+.symbolPercent:before {
+    content: "%";
+}
+
+input:-moz-read-only {
+    background-color: #eee;
+    color: #aaa;
+    box-shadow: none;
+}
+
+input:read-only {
+    background-color: #eee;
+    color: #aaa;
+    box-shadow: none;
+}
+
+
+/* checkbox et radio */
+
+.radio,
+.checkbox {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.beforeRadio {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.radio label,
+.checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.radio.radioLine label,
+.checkbox.checkboxLine label {
+    width: auto;
+    margin-right: 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    display: inline-block
+}
+
+.radioStyle,
+.checkboxStyle {
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+    width: auto;
+    color: #000000;
+    margin-right: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+.radioStyle input,
+.checkboxStyle input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radioStyle input:checked,
+.checkboxStyle input:checked {
+    border: 3px solid red;
+    background-color: red
+}
+
+.radio .label,
+.checkbox .label {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.radioStyle input:checked~.radio-el,
+.checkboxStyle input:checked~.checkbox-el {
+    border-color: #000000;
+}
+
+.radioStyle .radio-el,
+.checkboxStyle .checkbox-el {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    -webkit-transform: translate3d(0, 0.2857142857em, 0);
+    transform: translate3d(0, 0.2857142857em, 0);
+    margin-right: 0.3571428571em;
+}
+
+.checkboxStyle .checkbox-el {
+    border-radius: 0px;
+}
+
+.radioStyle .radio-el:after,
+.checkboxStyle .checkbox-el:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(20px / 2);
+    height: calc(20px / 2);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0);
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    opacity: 1;
+    transition: all 0.2s ease-out;
+}
+
+.checkboxStyle .checkbox-el:after {
+    border-radius: 0;
+}
+
+.radioStyle input:checked~.radio-el:after,
+.checkboxStyle input:checked~.checkbox-el:after {
+    background: #0f70b4;
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+    transform: translate3d(-50%, -50%, 0) scale(1);
+    transition: all 0.1s ease-out;
+}
+
+.checkboxStyle input:checked>.stars {
+    background-color: red;
+}
+
+
+/**/
+
+input.euro {
+    background-image: url(../img/euro.png);
+    background-position: right 20px center;
+    background-repeat: no-repeat
+}
+
+input.inlineinput {
+    width: auto;
+    display: inline-block
+}
+
+input.hourinput {
+    width: 70px;
+    margin: 0 10px;
+}
+
+input.highlighted {
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(145, 145, 145);
+    border-radius: 5px;
+}
+
+input::placeholder {
+    opacity: 0.5;
+}
+
+input.calendar {
+    background: url(../img/icon-calendar.svg) no-repeat right 20px center / auto 56%
+}
+
+input[type="password"] {
+    background: rgba(245, 246, 250, 0.459) url(../img/lock.svg) no-repeat right 20px center / auto 56%
+}
+
+input.search {
+    background: url(../img/icon-search.png) no-repeat right 20px center / auto 56%
+}
+
+input.simplesearch {
+    background: transparent url(../img/icon-search.png) no-repeat right 20px center / auto 56%;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+}
+
+.max-caract {
+    display: block;
+    text-align: right;
+    margin: 10px 0 -10px 0;
+    font-size: 11px;
+}
+
+.search-loc {
+    display: inline-block
+}
+
+textarea {
+    min-height: 300px
+}
+
+.wrapSpecialSelect {
+    display: inline-block;
+    position: relative
+}
+
+.selectWrap {
+    padding: 10px 23px;
+}
+
+.selectWrap input {
+    margin-right: 10px
+}
+
+.wrapSpecialSelect .selectlist {
+    position: absolute;
+    top: 20px;
+    width: 130%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+    left: 0;
+    border-radius: 5px;
+    display: none;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.15);
+    padding: 0 7px;
+}
+
+.wrapSpecialSelect .selectlist li {
+    padding: 5px;
+    font-size: 12px;
+    border-bottom: 1px solid #eee
+}
+
+.wrapSpecialSelect .selectlist li a {
+    color: #3e3e3e;
+    font-weight: 500;
+}
+
+.wrapSpecialSelect .selectlist li.edit a {
+    background: url(../img/icon-pencil.png) no-repeat left center / auto 100%;
+    padding-left: 20px;
+}
+
+.wrapSpecialSelect .selectlist li.lock a {
+    background: url(../img/icon-locked.png) no-repeat left center / auto 100%;
+    padding-left: 20px;
+}
+
+.wrapSpecialSelect .selectlist ul>li li {
+    border: none
+}
+
+.wrapSpecialSelect .selectlist.opened {
+    display: block
+}
+
+.selectlist .sublist {
+    padding-left: 10px;
+    padding-top: 5px
+}
+
+.select {
+    border-width: 1.22px;
+    border-color: rgb(226, 230, 239);
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgba(245, 246, 250, 0.459);
+    background: url(../img/select-arrow.svg) no-repeat right 20px center / 14px;
+    box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.07);
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 15px;
+    min-width: 200px;
+}
+
+.selectLight {
+    font-size: 13px;
+    min-width: 100px;
+    padding: 3px 30px 3px 10px;
+    line-height: 13px;
+    background: url(../img/select-arrow.svg) no-repeat right 10px center / 12px;
+}
+
+.multiple {
+    background: none;
+}
+
+.select-highlighted {
+    background: #3679b9 url(../img/select-arrow-white.png) no-repeat right 20px center / 10px;
+}
+
+.select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-height: 38px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    background: transparent;
+    font-size: 15px;
+}
+
+.selectLight select {
+    font-size: 13px;
+    min-height: 25px;
+}
+
+.select.select-highlighted select {
+    color: #fff
+}
+
+.select-type {
+    background: url(../img/select-arrow.svg) no-repeat right 0px center / 10px;
+    padding-right: 20px;
+    display: inline-block;
+    color: #3e3e3e
+}
+
+.select-highlighted {}
+
+
+/* on off checkbox */
+
+.onOff-wrap {
+    display: inline-block;
+    margin: 0 20px
+}
+
+.cbOnOff {
+    display: inline-block
+}
+
+.cbOnOff i {
+    display: inline-block;
+    color: #3e3e3e;
+    opacity: 0.7;
+    font-size: 13px
+}
+
+.cbOnOff .toggle {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0
+}
+
+.cbOnOff .toggle:before {
+    content: "";
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 34px;
+    height: 14px;
+    display: block;
+    background: #ccc;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.cbOnOff .toggle span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(#ccc, 0.5);
+    transition: all .2s ease;
+    box-shadow: 0px 0px 4px 0px rgba(1, 2, 2, 0.48);
+}
+
+.cbOnOff .toggle span:before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: -18px;
+    width: 56px;
+    height: 56px;
+    background: rgba(#4F2EDC, 0.5);
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 1;
+    pointer-events: none;
+}
+
+#cbx:checked+.toggle:before {
+    background: #8fbd55
+}
+
+#cbx:checked+.toggle span {
+    transform: translateX(20px);
+    transition: all .2s cubic-bezier(.8, .4, .3, 1.25);
+    transition: all .15s ease;
+    box-shadow: 0 3px 8px rgba(#4F2EDC, .2)
+}
+
+.cbOnOff span:before {
+    transform: scale(1);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
