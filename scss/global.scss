@@ -96,7 +96,7 @@ h4 {
     display: inline-block;
     cursor: pointer;
     background-color: var(--color-lightblue);
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 30px;
     padding: 15px 30px;
     color: #fff;
@@ -105,11 +105,15 @@ h4 {
     transition: all 0.4s ease;
 }
 
+.btnBoost {
+    background-color: var(--color-blue);
+}
+
 .btngoogle {
     display: inline-block;
     cursor: pointer;
     background: #c83427 url(../img/googlebtn.png) no-repeat left 20px center / auto 50%;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 30px;
     padding: 15px 30px;
     color: #fff;
@@ -209,6 +213,10 @@ h4 {
     padding: 7px 7px;
 }
 
+.btn-middle {
+    padding: 10px;
+}
+
 .btn-vsmall {
     padding: 3px 15px;
 }
@@ -233,7 +241,7 @@ h4 {
 }
 
 .link {
-    color: var(--color-blue)
+    color: var(--color-lightblue)
 }
 
 .delete {
@@ -326,6 +334,12 @@ h4 {
 
 .btn-group .toggle:first-child {
     border-radius: 5px 0 0 5px
+}
+
+.btn-group .toggle a,
+.btn-group .toggle,
+.btn-group .toggle a {
+    color: #000;
 }
 
 .btn-group .toggle.active,
@@ -533,6 +547,10 @@ h4 {
     margin-bottom: 30px;
 }
 
+.centered .loadMore {
+    text-align: center;
+}
+
 .centeredBox .box-footer a {
     color: var(--color-blue)
 }
@@ -717,7 +735,6 @@ h4 {
 .table td.actions,
 .table th.actions {
     text-align: right;
-    min-width: 125px;
 }
 
 .table td.actions a {
@@ -979,6 +996,32 @@ article .delete {
     right: -50px;
     top: 50%;
     margin-top: -20px;
+}
+
+
+/* ARTICLE / Campaigns */
+
+.articles .wrap-preview {
+    width: 30%;
+    .card-campaign {
+        border: 1px solid #dddfe2;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+}
+
+.articles .wrap-about {
+    width: 50%;
+    padding: 0 4%;
+    font-size: 12px;
+    line-height: 19px;
+    ul {
+        margin: 10px 0
+    }
+}
+
+.articles .wrap-actions {
+    width: 20%
 }
 
 
@@ -1570,7 +1613,7 @@ select.validoption {
     height: 15px;
 }
 
-.labelActive .stars .star {
+.stars .star.labelActive {
     background: url(../img/starActive.png) no-repeat center center / cover;
 }
 
@@ -1989,12 +2032,11 @@ select.validoption {
 }
 
 .wrap-actions {
-    text-align: center
-}
-
-.wrap-actions .btn {
-    display: inline-block;
-    margin: 0 10px;
+    text-align: center;
+    .btn {
+        display: inline-block;
+        margin: 5px;
+    }
 }
 
 .wrap-actions .checkbox {
@@ -2261,6 +2303,21 @@ select {
     max-height: calc( 100% - 200px);
     overflow-y: scroll;
     position: relative
+}
+
+.largePopup .insidePopup {
+    width: 1200px;
+}
+
+.insidePopup .wrapper-title {
+    margin-bottom: 30px;
+    h2 {
+        padding-top: 10px;
+    }
+    h2 span {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 .galleryPopup {
@@ -2816,6 +2873,8 @@ shown {
 
 /* card-campaign */
 
+.articles.wrap-campaign {}
+
 .wrap-card-campaign {
     display: -ms-flexbox;
     display: flex;
@@ -2836,6 +2895,16 @@ shown {
     background-color: #fff;
     position: relative;
     overflow: hidden;
+}
+
+.card-campaign .card-labels {
+    padding: 10px 20px;
+    border-top: 1px solid #e2e6ef;
+    text-align: center;
+}
+
+.card-campaign {
+    position: relative;
 }
 
 .card-campaign .post-pict img {
@@ -2923,6 +2992,28 @@ shown {
 
 .card-campaign .card-activation .btn-group {
     margin-bottom: 10px
+}
+
+table .post-pict {
+    max-width: 130px;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.smallIcon {
+    display: inline-block;
+    width: 20px;
+}
+
+.smallIcon img {
+    display: block;
+    width: 100%;
+}
+
+.tableLineUnder {
+    background-color: #eee!important;
 }
 
 
