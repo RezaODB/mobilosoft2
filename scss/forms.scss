@@ -271,6 +271,19 @@ textarea {
     position: relative
 }
 
+.wrapSpecialSelect.actionsselect {
+    background-color: #fff;
+    border: 1px solid var(--color-lightblue);
+    padding: 5px 8px 7px 12px;
+    border-radius: 10px;
+}
+
+.wrapSpecialSelect.actionsselect .selectlist {
+    width: 100%;
+    text-align: left;
+    top: 30px
+}
+
 .selectWrap {
     padding: 10px 23px;
 }

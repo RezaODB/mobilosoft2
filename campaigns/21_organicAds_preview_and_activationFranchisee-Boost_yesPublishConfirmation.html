@@ -1,20 +1,594 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Mobilosoft</title>
-    <link rel="stylesheet" type="text/css" href="../css/global.css">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/global.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
+    <!-- *************** -->
+    <!-- ASIDE LEFT  NAV -->
+    <!-- *************** -->
+    <aside>
+        <nav>
+            <div class="logo">
+                <a href=""><img src="../img/logo.svg" /></a>
+            </div>
+            <ul>
+                <li class="nav-dashboard"><a href="dashboard.html">Dashboard</a></li>
+                <li class="nav-location active">
+                    <a href="locations.html">Location</a>
+                </li>
+                <li class="nav-post"><a href="post.html">Post</a></li>
+                <li class="nav-inbox"><a href="inbox.html">Inbox</a></li>
+                <li class="nav-reporting"><a href="reporting.html">Reporting</a></li>
+                <li class="nav-settings">
+                    <a href="settings/settings.html">Settings</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- OPEN CLOSE SECTION / EXPANDABLE -->
+        <div class="expandable">
+            <div class="logoExp">
+                <a href=""><img src="../img/logoText.svg" /></a>
+            </div>
+            <ul>
+                <li class="nav-dashboard ">
+                    <a href="dashboard.html">Dashboard <span class="sticker stick-nbr">10</span></a
+            >
+          </li>
+          <li class="nav-location active">
+            <a href="locations.html">Location</a>
+                </li>
+                <li class="nav-post"><a href="post.html">Post</a></li>
+                <li class="nav-inbox"><a href="inbox.html">inbox</a></li>
+                <li class="nav-reporting"><a href="reporting.html">Reporting</a></li>
+                <li class="nav-settings">
+                    <a href="settings/settings.html">Settings</a>
+                </li>
+            </ul>
+            <div class="context-infos">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedeiusmod tempor incididunt
+                </p>
+                <a href="#" class="btn-nav">Lorem ipsum</a>
+                <a href="#" class="btn-nav">Lorem ipsum</a>
+            </div>
+        </div>
+        <!-- OPEN CLOSE SECTION / EXPANDABLE -->
+    </aside>
+    <!-- **************** -->
+    <!-- @ASIDE LEFT  NAV -->
+    <!-- **************** -->
+
+    <!-- ******* -->
+    <!-- HEADER -->
+    <!-- ******* -->
+    <header>
+        <ul class="breadcrumb">
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li class="active">Lorem</li>
+        </ul>
+        <div class="profil">
+            <div class="profil-pict">
+                <img src="https://dummyimage.com/100x100/000/fff" />
+            </div>
+
+            <h4 class="profil-name wrapSpecialSelect">
+                <a href="#" class="select-type">Nom prénom</a>
+                <div class="selectlist">
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><a href="#">Website 1</a></li>
+                                <li><a href="#">Website 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tasks</a></li>
+                    </ul>
+                </div>
+            </h4>
+
+            <ul class="profil-actions">
+                <li>
+                    <a href="#" class="edit"><img src="../img/icon-pencil.png" /></a>
+                </li>
+                <li>
+                    <a href="#" class="lock"><img src="../img/icon-locked.png" /></a>
+                </li>
+            </ul>
+        </div>
+        <div class="profil-wallet">
+            <a href="#" class="wallet">My Wallet</a>
+        </div>
+    </header>
+
+    <!-- ******* -->
+    <!-- @HEADER -->
+    <!-- ******* -->
+
+    <!-- **** -->
+    <!-- MAIN -->
+    <!-- **** -->
+    <main>
+        <!-- Title of the page -->
+        <div class="wrapper-title">
+            <h1>Campaign</h1>
+            <div class="btns-group">
+                <a href="#" class="btn btn-level2">Images Library <b><img src="../img/gallery.svg"> </b></a>
+
+                <a href="#" class="btn btn-highlight">New campaign<b><img src="../img/btn-plus.png"> </b></a>
+
+            </div>
+        </div>
+
+        <!-- @Title of the page -->
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
-    <script src="../js/global.js"></script>
+        <div class="box form">
+
+            <div class="box-subTitle box-subTitleFilters">
+                <div class="aside-left">
+                    <h2>Campaign preview and activation</h2>
+                    <span class="btn-nav btn-middle active">Wine</span>
+                </div>
+                <div class="aside-right">
+                    <div class="btn-group btn-group-small">
+                        <button class="toggle active">FR</button>
+                        <button class="toggle ">NL</button>
+                        <button class="toggle ">EN</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-inside b-inside-highlighted">
+                <div class="row rowTop">
+                    <div class="col">
+
+                        <div class="post-google post-preview">
+
+                            <div class="post-container">
+                                <div class="post-channel">
+                                    Google News
+                                </div>
+                                <div class="post">
+
+                                    <div class="post-content">
+                                        <div class="post-pict">
+                                            <img src="http://lorempixel.com/800/500/">
+                                            <span class="post-time">Posted one day ago</span>
+                                        </div>
+                                        <div class="post-desc">
+
+                                            <div class="post-text">
+                                                <input type="text" value="title">
+                                                <textarea>Lorem ipsum dolor sit amet, consectetur a in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                    anim id est laborum
+                                               </textarea>
+                                            </div>
+
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <div class="post-facebook post-preview">
+                            <div class="post-container">
+                                <div class="post-channel">
+                                    Facebook
+                                </div>
+                                <div class="post">
+                                    <div class="post-header">
+                                        <div class="post-avatar"><img src="http://lorempixel.com/50/50/"></div>
+                                        <div class="post-title">
+                                            <input type="text" value="title">
+                                            <h6>10 juillet</h6>
+                                        </div>
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-desc">
+
+                                            <textarea height="30">Lorem ipsum dolor sit amet, consectetur a in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                    anim id est laborum
+                                               </textarea> </div>
+                                        <div class="post-pict"> <img src="http://lorempixel.com/800/500/"></div>
+                                    </div>
+                                    <div class="post-footer">
+                                        <div class="post-actions">
+                                            <a href="#"><b><img src="../img/fb-like.svg"></b>J'aime</a>
+                                            <a href="#"><b><img src="../img/fb-comment.svg"></b>Commenter</a>
+                                            <a href="#"><b><img src="../img/fb-share.svg"></b>Partager</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <div class="post-storelocator post-preview">
+
+                            <div class="post-container">
+                                <div class="post-channel">
+                                    Store locator
+                                </div>
+                                <div class="post">
+
+                                    <div class="post-content">
+                                        <div class="post-pict">
+                                            <img src="http://lorempixel.com/800/500/">
+                                            <span class="post-time">Posted one day ago</span>
+                                        </div>
+                                        <div class="post-desc">
+
+                                            <div class="post-text">
+                                                <input type="text" value="title">
+                                                <textarea>Lorem ipsum dolor sit amet, consectetur a in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                    anim id est laborum
+                                               </textarea>
+                                            </div>
+
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box-subTitle box-subTitleFilters">
+                <h2>When and where ?</h2>
+            </div>
+
+            <div class="box-inside form">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="mainLabel">Date de validité</div>
+
+                        <!-- <div class="onOff-wrap">
+                            <div class="cbOnOff">
+                                <input type="checkbox" id="cbx" style="display:none">
+                                <label for="cbx" class="toggle"><span></span></label>
+
+                                <i>Campagne continue</i>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>It must be published on the</label>
+                        <input type="text" class="calendar hasDatepicker" placeholder="lorem ipsum" id="dp1568730605116">
+                    </div>
+                    <div class="col">
+                        <label>It must be un unpublished on the</label>
+                        <input type="text" class="calendar hasDatepicker" placeholder="lorem ipsum" id="dp1568730605117">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="mainLabel labBl">Where do you want to publish this campaign?</div>
+                        <div class="checkbox checkboxLine">
+                            <label class="labelActive">
+                        <div class="checkboxStyle">
+                            <input type="checkbox" name="lorem" value="lorem" required="">
+                            <span class="checkbox-el"></span>
+                        </div>
+                        <span class="label">Google</span>
+                    </label>
+                            <label>
+                            <div class="checkboxStyle">
+                                <input type="checkbox" name="lorem2" value="lorem2" required="">
+                                <span class="checkbox-el"></span>
+                            </div>
+                            <span class="label">Facebook</span>
+                        </label>
+                            <label>
+                            <div class="checkboxStyle">
+                                <input type="checkbox" name="lorem2" value="lorem2" required="">
+                                <span class="checkbox-el"></span>
+                            </div>
+                            <span class="label">Store locator</span>
+                        </label>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="mainLabel labBl">In which languages do you want to publish this campaign?</div>
+                        <div class="checkbox checkboxLine">
+                            <label class="labelActive">
+                        <div class="checkboxStyle">
+                            <input type="checkbox" name="lorem" value="lorem" required="">
+                            <span class="checkbox-el"></span>
+                        </div>
+                        <span class="label">Français</span>
+                    </label>
+                            <label>
+                            <div class="checkboxStyle">
+                                <input type="checkbox" name="lorem2" value="lorem2" required="">
+                                <span class="checkbox-el"></span>
+                            </div>
+                            <span class="label">Anglais</span>
+                        </label>
+                            <label>
+                            <div class="checkboxStyle">
+                                <input type="checkbox" name="lorem2" value="lorem2" required="">
+                                <span class="checkbox-el"></span>
+                            </div>
+                            <span class="label">Nederlands</span>
+                        </label>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-subTitle box-subTitleFilters">
+                <h2>For which store ?</h2>
+                <div class="selectWrap"><input type="checkbox"> Select all</div>
+
+                <ul class="wrap-socials">
+                    <li>
+                        <a href="#" class="social-icon"><img src="../img/icon-fb.png"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon"><img src="../img/icon-google.png"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon"><img src="../img/icon-loc.png"></a>
+                    </li>
+                </ul>
+                <div class="search-loc">
+                    <input type="text" class="simplesearch" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="box-inside box-inside-locations">
+                <div class="locations-results">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td style="width: 20px"><input type="checkbox"></td>
+                                <td style="width: 30%"><strong>Lorem</strong></td>
+                                <td>Lorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><strong>Lorem</strong></td>
+                                <td>Lorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><strong>Lorem</strong></td>
+                                <td>Lorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><strong>Lorem</strong></td>
+                                <td>Lorem</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px"><input type="checkbox"></td>
+                                <td style="width: 30%"><strong>Lorem</strong></td>
+                                <td>Lorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><strong>Lorem</strong></td>
+                                <td>Lorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><strong>Lorem</strong></td>
+                                <td>Lorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><strong>Lorem</strong></td>
+                                <td>Lorem</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20px"><input type="checkbox"></td>
+                                <td style="width: 30%"><strong>Lorem</strong></td>
+                                <td>Lorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><strong>Lorem</strong></td>
+                                <td>Lorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><strong>Lorem</strong></td>
+                                <td>Lorem</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><strong>Lorem</strong></td>
+                                <td>Lorem</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+
+            <div class="box-subTitle box-subTitleFilters">
+                <h2>Budget</h2>
+            </div>
+
+            <div class="box-inside form">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="mainLabel labBl"> Do you want to boost your campaign ?</div>
+                        <div class="radio radioLine">
+                            <label>
+                            <div class="radioStyle">
+                                <input type="radio" name="lorem3" value="lorem3" required="">
+                                <span class="radio-el"></span>
+                            </div>
+                            <span class="label">No</span>
+                        </label>
+                            <label>
+                            <div class="radioStyle">
+                                <input type="radio" name="lorem3" value="lorem4"  checked required="">
+                                <span class="radio-el"></span>
+                            </div>
+                            <span class="label">Yes</span>
+                        </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-inside budget">
+                <table class="addition">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>
+                            <div class="sumToAdd">
+                                <span class="icon"><img src="../img/icon-fb.png"></span>
+                                <h5>Budget facebook</h5>
+
+                            </div>
+                        </th>
+                        <th></th>
+                        <th>
+                            <div class="sumToAdd">
+                                <span class="icon"><img src="../img/icon-google.png"></span>
+                                <h5>Budget google</h5>
+
+                            </div>
+                        </th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Carrefour express Aalst Molenstraat - 1337</td>
+                        <td> <input type="text" class="euro"></td>
+                        <td>
+                            <div class="plusOp">
+                                +
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" class="euro"></td>
+                        <td>
+                            <div class="equalOp">
+                                =
+                            </div>
+                        </td>
+                        <td class="subtotal"> <input type="text" readonly class="euro"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Carrefour express Aalst Molenstraat - 1337</td>
+                        <td><input type="text" class="euro"></td>
+                        <td>
+                            <div class="plusOp">
+                                +
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" class="euro"></td>
+                        <td>
+                            <div class="equalOp">
+                                =
+                            </div>
+                        </td>
+                        <td class="subtotal"> <input type="text" readonly class="euro"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="total">
+                            <div class="equalOp">
+                                =
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+
+
+
+
+                        <td colspan="6" class="fullTotalText">Total campaign Budget :</td>
+                        <td class="fullTotal"> <input type="text" readonly class="euro"></td>
+                    </tr>
+
+                </table>
+
+                <div class="solde">
+
+                    <div class="boxlined success">
+                        <img src="../img/icon-wallet.svg" class="ico">
+                        <p><strong>Solde : 400€ </strong></p>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="wrapSubmit">
+                <input type="submit" value="Publish" class="btn">
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+
+    <!-- **** -->
+    <!-- @MAIN -->
+    <!-- **** -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js " integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js " integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin=" anonymous "></script>
+    <script src="../js/global.js "></script>
 </body>
 
 </html>

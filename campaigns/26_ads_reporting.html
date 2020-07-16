@@ -2,19 +2,873 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"></meta>
+
     <title>Mobilosoft</title>
-    <link rel="stylesheet" type="text/css" href="../css/global.css">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/global.css"></link>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"></link>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"></link>
 </head>
 
 <body>
+    <!-- *************** -->
+    <!-- ASIDE LEFT  NAV -->
+    <!-- *************** -->
 
+    <aside>
+        <nav>
+            <div class="logo">
+                <a href="">
+                    <img src="../img/logo.svg">
+                </a>
+            </div>
+
+            <ul>
+                <li class="nav-dashboard">
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+
+                <li class="nav-location active">
+                    <a href="locations.html">Location</a>
+                </li>
+
+                <li class="nav-post">
+                    <a href="post.html">Post</a>
+                </li>
+
+                <li class="nav-inbox">
+                    <a href="inbox.html">Inbox</a>
+                </li>
+
+                <li class="nav-reporting">
+                    <a href="reporting.html">Reporting</a>
+                </li>
+
+                <li class="nav-settings">
+                    <a href="settings/settings.html">Settings</a>
+                </li>
+                <li class="nav-school"><a href="school.html">Mobilosoft School</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- OPEN CLOSE SECTION / EXPANDABLE -->
+
+        <div class="expandable">
+            <div class="logoExp">
+                <a href="">
+                    <img src="../img/logoText.svg">
+                </a>
+            </div>
+
+            <ul>
+                <li class="nav-dashboard">
+                    <a href="dashboard.html">
+                        Dashboard
+
+                        <span class="sticker stick-nbr">10</span>
+                    </a>
+                </li>
+
+                <li class="nav-location active">
+                    <a href="locations.html">Location</a>
+                </li>
+
+                <li class="nav-post">
+                    <a href="post.html">Post</a>
+                </li>
+
+                <li class="nav-inbox">
+                    <a href="inbox.html">inbox</a>
+                </li>
+
+                <li class="nav-reporting">
+                    <a href="reporting.html">Reporting</a>
+                </li>
+
+                <li class="nav-settings">
+                    <a href="settings/settings.html">Settings</a>
+                </li>
+                <li class="nav-school"><a href="school.html">Mobilosoft School</a></li>
+
+            </ul>
+
+            <div class="context-infos">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedeiusmod tempor incididunt
+                </p>
+
+                <a href="#" class="btn-nav">Lorem ipsum</a>
+
+                <a href="#" class="btn-nav">Lorem ipsum</a>
+            </div>
+        </div>
+
+        <!-- OPEN CLOSE SECTION / EXPANDABLE -->
+    </aside>
+
+    <!-- **************** -->
+    <!-- @ASIDE LEFT  NAV -->
+    <!-- **************** -->
+    <!-- ******* -->
+    <!-- HEADER -->
+    <!-- ******* -->
+
+    <header>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">Lorem</a>
+            </li>
+
+            <li>
+                <a href="#">Reporting</a>
+            </li>
+
+            <li class="active">inbox</li>
+        </ul>
+
+        <div class="profil">
+            <div class="profil-pict">
+                <img src="https://dummyimage.com/100x100/000/fff">
+            </div>
+
+            <h4 class="profil-name wrapSpecialSelect">
+                <a href="#" class="select-type">Nom prénom</a>
+
+                <div class="selectlist">
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="#">Website 1</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Website 2</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Tasks</a>
+                        </li>
+                    </ul>
+                </div>
+            </h4>
+
+            <ul class="profil-actions">
+                <li>
+                    <a href="#" class="edit">
+                        <img src="../img/icon-pencil.png">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="lock">
+                        <img src="../img/icon-locked.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="profil-wallet">
+            <a href="#" class="wallet">My Wallet</a>
+        </div>
+    </header>
+
+    <!-- ******* -->
+    <!-- @HEADER -->
+    <!-- ******* -->
+    <!-- **** -->
+    <!-- MAIN -->
+    <!-- **** -->
+
+    <main>
+        <!-- Title of the page -->
+
+        <div class="wrapper-title">
+            <h1>Reporting</h1>
+
+            <div class="btns-group">
+                <a href="#" class="btn btn-level2">
+                    Export Excel
+
+                    <b>
+                        <img src="../img/btn-download.png">
+                    </b>
+                </a>
+            </div>
+        </div>
+
+        <!-- @Title of the page -->
+
+
+        <div class="box boxflex">
+            <div class="box-title boxflex">
+                <div class="aside-left">
+                    <strong>Filter :</strong>
+
+                    <ul class="wrap-socials filtLine">
+                        <li>
+                            <a href="#" class="social-icon">
+                                <img src="../img/icon-google.png">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-icon">
+                                <img src="../img/icon-fb.png">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-icon">
+                                <img src="../img/icon-trip.png">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="date-picker filtLine" id="reportrange">
+                        <img src="../img/icon-calendar.svg">
+                        <span></span>
+                        <img src="../img/select-arrow.svg">
+                    </div>
+
+                    <div class="filtLine">
+                        <div class="btn-group btn-group-v-small">
+                            <button class="toggle active">Paid</button>
+                            <button class="toggle">Free</button>
+                        </div>
+                    </div>
+
+                    <div class="filtLine noLine">
+                        <div class="select selectLight">
+                            <select>
+                                <option>Day</option>
+
+                                <option>Week</option>
+
+                                <option>Month</option>
+
+                                <option>Year</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aside-right">
+                    <input type="text" class="search" placeholder="Locations"></input>
+                </div>
+            </div>
+
+            <!-- ******* @SUBNAV ******* -->
+
+            <div class="box-inside">
+                <div class="row">
+                    <div class="col">
+                        <div class="specialInfo cardsInfos">
+                            <div class="cardInfo">
+                                <small>Total reviews on period</small>
+
+                                <div class="nbr">207</div>
+                            </div>
+
+                            <div class="cardInfo">
+                                <small>Average rating on period</small>
+
+                                <div class="nbr">
+                                    4,67
+
+                                    <sup>/5</sup>
+                                </div>
+                            </div>
+
+                            <div class="cardInfo">
+                                <small>Answer rate on period</small>
+
+                                <div class="nbr">
+                                    84,06
+
+                                    <sup>%</sup>
+                                </div>
+                            </div>
+
+                            <div class="cardInfo">
+                                <small>Average answer time on period</small>
+
+                                <div class="nbr">
+                                    -7
+
+                                    <sup>hours</sup>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row chartRow">
+                    <div class="col">
+                        <div class="chartBox">
+                            <h4>
+                                #received reviews vs #answered reviewed
+                            </h4>
+
+                            <div class="chartSelection">
+                                <div class="checkbox checkboxStars checkboxLine">
+                                    <label>
+                                            <div class="checkboxStyle">
+                                                <input
+                                                    type="checkbox"
+                                                    name="lorem"
+                                                    value="lorem"
+                                                    required=""
+                                                ></input>
+    
+                                                <span class="checkbox-el"></span>
+                                            </div>
+    
+                                            <span class="label">
+                                                <div class="stars">
+                                                    <span class="star"></span>
+                                                </div>
+                                            </span>
+                                        </label>
+
+                                    <label class="">
+                                            <div class="checkboxStyle">
+                                                <input
+                                                    type="checkbox"
+                                                    name="lorem2"
+                                                    value="lorem2"
+                                                    required=""
+                                                ></input>
+                                                
+    
+                                                <span class="checkbox-el"></span>
+                                            </div>
+    
+                                            <span class="label">
+                                                <div class="stars">
+                                                    <span class="star"></span>
+                                                    <span class="star"></span>
+                                                </div>
+
+                                            </span>
+                                        </label>
+
+                                    <label>
+                                            <div class="checkboxStyle">
+                                                <input
+                                                    type="checkbox"
+                                                    name="lorem2"
+                                                    value="lorem2"
+                                                    required=""
+                                                ></input>
+    
+                                                <span class="checkbox-el"></span>
+                                            </div>
+    
+                                            <span class="label"> <div class="stars">
+                                                <span class="star"></span>
+                                                <span class="star"></span>
+                                                <span class="star"></span>
+                                            </div></span>
+                                        </label>
+                                    <label>
+                                                <div class="checkboxStyle">
+                                                    <input
+                                                        type="checkbox"
+                                                        name="lorem2"
+                                                        value="lorem2"
+                                                        required=""
+                                                    ></input>
+        
+                                                    <span class="checkbox-el"></span>
+                                                </div>
+        
+                                                <span class="label"><div class="stars">
+                                                    <span class="star"></span>
+                                                    <span class="star"></span>
+                                                    <span class="star"></span>
+                                                    <span class="star"></span>
+                                                </div></span>
+                                            </label>
+                                    <label>
+                                                    <div class="checkboxStyle">
+                                                        <input
+                                                            type="checkbox"
+                                                            name="lorem2"
+                                                            value="lorem2"
+                                                            required=""
+                                                        ></input>
+            
+                                                        <span class="checkbox-el"></span>
+                                                    </div>
+            
+                                                    <span class="label"><div class="stars">
+                                                        <span class="star"></span>
+                                                        <span class="star"></span>
+                                                        <span class="star"></span>
+                                                        <span class="star"></span>
+                                                        <span class="star"></span>
+                                                    </div></span>
+                                                </label>
+                                </div>
+                            </div>
+                            <div id="chart_reviews" class="chart" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="row chartRow">
+                    <div class="col">
+                        <div class="chartBox">
+                            <h4>Rating distribution</h4>
+
+                            <div id="chart_rating" class="chart" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>-->
+
+                <div class="row chartRow">
+                    <div class="col">
+                        <div class="chartBox">
+                            <h4>Activations <span class="sticker stick-nbr">0%</span></h4>
+
+                            <div id="chart_reviewsMedia" class="chart" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="chartBox">
+                            <h4>Impressions <span class="sticker stick-nbr">16.85%</span></h4>
+
+                            <div id="chart_ratingDistribution" class="chart" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row chartRow">
+                    <div class="col">
+                        <div class="chartBox">
+                            <h4>CPC <span class="sticker stick-nbr">16.85%</span></h4>
+
+                            <div id="chart_reviewsTags" class="chart" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="chartBox">
+                            <h4>
+                                CPM <span class="sticker stick-nbr">16.85%</span>
+                            </h4>
+
+                            <p class="intro">
+                                This chart shows how many of your location are in each Net Promoter Score status if we only take into accounts the reviews received during the period selected for this
+                            </p>
+
+                            <div id="chart_promoterScore" class="chart" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--   <div class="row">
+                    <div class="col">
+                        <div class="chartBox">
+                            <h4>
+                                AVERAGE NPS EVOLUTION ON “Période choisie”
+                            </h4>
+
+                            <div id="chart_averageNps" class="chart" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="col"></div>
+                </div>-->
+
+                <!-- TABLEAUX -->
+
+                <div class="row chartRow">
+                    <div class="col">
+                        <div class="chartBox">
+
+
+
+
+                            <table class="table">
+                                <tr>
+                                    <th class="reorder"><b>Campaigns</b></th>
+
+                                    <th class="reorder">Clics</th>
+
+                                    <th class="reorder">Impressions</th>
+
+                                    <th class="reorder">Calls</th>
+
+                                    <th class="reorder">Intinerary</th>
+                                    <th class="reorder">CPC</th>
+                                    <th class="reorder">CPM</th>
+                                    <th class="reorder">in-store trafic</th>
+                                    <th class="reorder">sales</th>
+                                </tr>
+
+                                <tr>
+                                    <td><b>Le Beaujolais</b></td>
+
+
+                                    <td>lorem</td>
+
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <td><b>Le Beaujolais</b></td>
+
+
+                                    <td>lorem</td>
+
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <td><b>Le Beaujolais</b></td>
+
+
+                                    <td>lorem</td>
+
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <td><b>Le Beaujolais</b></td>
+
+                                    <td>lorem</td>
+
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+                                    <td>lorem</td>
+
+
+                                </tr>
+
+
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <!-- **** -->
+    <!-- @MAIN -->
+    <!-- **** -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
     <script src="../js/global.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+
+        google.charts.setOnLoadCallback(drawChart);
+
+
+        function drawChart() {
+
+
+            // ***************
+            // REVIEWS
+            // ***************
+
+            // Some raw data (not necessarily accurate)
+            var data1 = google.visualization.arrayToDataTable([
+                ['Month', 'Reviews', 'Answered'],
+                ['2004/05', 165, 114.6],
+                ['2005/06', 135, 282],
+                ['2006/07', 157, 303],
+                ['2007/08', 139, 400],
+                ['2008/09', 136, 500]
+            ]);
+
+            var options1 = {
+                title: '',
+
+                hAxis: {
+                    title: ''
+                },
+                seriesType: 'bars',
+                colors: ['#41b9af', '#e6693e', '#eeb24a', '#f3b49f', '#f6c7b6'],
+                legend: {
+                    position: 'bottom'
+                },
+                series: {
+                    1: {
+                        type: 'line'
+                    }
+                }
+            };
+
+            var chart1 = new google.visualization.ComboChart(document.getElementById('chart_reviews'));
+            chart1.draw(data1, options1);
+
+
+            // *********
+            // RATING 
+            // ********
+
+            var data2 = new google.visualization.DataTable();
+            data2.addColumn('string', 'Topping');
+            data2.addColumn('number', 'Slices');
+            data2.addRows([
+                ['* stars', 100],
+                ['** stars', 100],
+                ['*** stars', 100],
+                ['**** stars', 100],
+                ['***** stars', 50],
+            ]);
+
+
+            var options2 = {
+                colors: ['#e6693e', '#f6c7b6', '#eeb24a', '#3679b9', '#41b9af'],
+                pieSliceText: 'label',
+                legend: {
+                    position: 'bottom'
+                },
+            };
+
+
+            /*var chart2 = new google.visualization.PieChart(document.getElementById('chart_rating'));
+            chart2.draw(data2, options2);*/
+
+            // ***********
+            // REVIEW PAR MEDIA
+            // ***********
+            var data3 = google.visualization.arrayToDataTable([
+                ['Year', 'Google', 'Facebook', 'Trip advisor'],
+                ['2017', 8.4, 7.9, 7.9],
+                ['2018', 6.9, 6., 7.9],
+                ['2019', 6.5, 6.4, 7.9]
+            ]);
+
+            var options3 = {
+                vAxis: {
+                    title: ''
+                },
+                isStacked: true,
+                colors: ['#e64032', '#3a589b', '#6eaf49'],
+
+                legend: {
+                    position: 'bottom'
+                }
+            };
+
+            var chart3 = new google.visualization.SteppedAreaChart(document.getElementById('chart_reviewsMedia'));
+
+            chart3.draw(data3, options3);
+
+            // ***********
+            // rating Distribution Chart
+            // ***********
+            var data4 = google.visualization.arrayToDataTable([
+                ['Year', '*', '**', '***', '****', '*****'],
+                ['2017', 8.4, 7.9, 7.9, 7.9, 7.9],
+                ['2018', 6.9, 6., 7.9, 2, 7.9],
+                ['2019', 6.5, 6.4, 7.9, 3, 7.9]
+            ]);
+
+            var options4 = {
+                vAxis: {
+                    title: ''
+                },
+                isStacked: true,
+                colors: ['#e6693e', '#f6c7b6', '#eeb24a', '#3679b9', '#41b9af'],
+
+                legend: {
+                    position: 'bottom'
+                }
+            };
+
+            var chart4 = new google.visualization.SteppedAreaChart(document.getElementById('chart_ratingDistribution'));
+
+            chart4.draw(data4, options4);
+
+            // ***********
+            // REVIEWS PAR TAGS
+            // ***********
+            var options5 = {
+                vAxis: {
+                    title: ''
+                },
+                isStacked: true,
+                colors: ['#e6693e', '#f6c7b6', '#eeb24a', '#3679b9', '#41b9af'],
+
+                legend: {
+                    position: 'bottom'
+                }
+            };
+
+            var data5 = new google.visualization.DataTable();
+            data5.addColumn('string', 'Topping');
+            data5.addColumn('number', 'Slices');
+            data5.addRows([
+                ['tag 1', 210],
+                ['tag 2', 400],
+                ['tag 3', 10],
+                ['tag 4', 20],
+                ['tag 5', 3],
+            ]);
+
+            var chart5 = new google.visualization.PieChart(document.getElementById('chart_reviewsTags'));
+            chart5.draw(data5, options5);
+
+            // ***********
+            // chart_promoterScore
+            // ***********
+            var options6 = {
+                vAxis: {
+                    title: ''
+                },
+                isStacked: true,
+                colors: ['#41b9af', '#eeb24a', '#e6693e'],
+
+                legend: {
+                    position: 'bottom'
+                }
+            };
+
+            var data6 = new google.visualization.DataTable();
+            data6.addColumn('string', 'Topping');
+            data6.addColumn('number', 'Slices');
+            data6.addRows([
+                ['Promoteurs', 210],
+                ['Passive', 400],
+                ['Detracteur', 100],
+
+            ]);
+
+            var chart6 = new google.visualization.PieChart(document.getElementById('chart_promoterScore'));
+            chart6.draw(data6, options6);
+
+
+
+            // ***********
+            // AVERAGE NPS EVOLUTION ON “Période choisie”
+            // ***********
+
+
+            var data7 = google.visualization.arrayToDataTable([
+                ['Year', 'Average'],
+                ['2004', 1000],
+                ['2005', 1170],
+                ['2006', 660],
+                ['2007', 1030]
+            ]);
+
+            var options7 = {
+                title: '',
+                curveType: 'function',
+                legend: {
+                    position: 'bottom'
+                }
+            };
+
+            /* var chart7 = new google.visualization.LineChart(document.getElementById('chart_averageNps'));
+
+             chart7.draw(data7, options7);*/
+
+        }
+
+
+
+
+        $(function() {
+            var start = moment().subtract(29, "days");
+            var end = moment();
+
+            function cb(start, end) {
+                $("#reportrange span").html(
+                    start.format("DD MMM YYYY") + " - " + end.format("DD MMM YYYY")
+                );
+            }
+
+            $("#reportrange").daterangepicker({
+                    startDate: start,
+                    endDate: end,
+                    ranges: {
+                        Today: [moment(), moment()],
+                        Yesterday: [
+                            moment().subtract(1, "days"),
+                            moment().subtract(1, "days")
+                        ],
+                        "Last 7 Days": [moment().subtract(6, "days"), moment()],
+                        "Last 30 Days": [moment().subtract(29, "days"), moment()],
+                        "This Month": [
+                            moment().startOf("month"),
+                            moment().endOf("month")
+                        ],
+                        "Last Month": [
+                            moment()
+                            .subtract(1, "month")
+                            .startOf("month"),
+                            moment()
+                            .subtract(1, "month")
+                            .endOf("month")
+                        ]
+                    }
+                },
+                cb
+            );
+
+            cb(start, end);
+        });
+    </script>
 </body>
 
 </html>
